@@ -1,0 +1,13 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\flashprg.o"
+".\objects\flashdev.o"
+".\objects\at32f435_437_crm.o"
+".\objects\at32f435_437_flash.o"
+".\objects\at32f435_437_gpio.o"
+".\objects\at32f435_437_pwc.o"
+".\objects\at32f435_437_qspi.o"
+".\objects\system_at32f435_437.o"
+--strict --scatter ".\Target.lin"
+--diag_suppress L6305 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\listings\qspi_algorithm_w25q32.map" -o .\objects\qspi_algorithm_w25q32.axf

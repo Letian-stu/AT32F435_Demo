@@ -1,0 +1,13 @@
+.\objects\lv_lru.o: ..\lvgl\src\misc\lv_lru.c
+.\objects\lv_lru.o: ..\lvgl\src\misc\lv_lru.h
+.\objects\lv_lru.o: ..\lvgl\src\misc\../lv_conf_internal.h
+.\objects\lv_lru.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdint.h
+.\objects\lv_lru.o: ..\lvgl\src\misc\../lv_conf_kconfig.h
+.\objects\lv_lru.o: ..\lvgl\demos\benchmark\../../lv_conf.h
+.\objects\lv_lru.o: ..\lvgl\src\misc\lv_types.h
+.\objects\lv_lru.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stddef.h
+.\objects\lv_lru.o: ..\lvgl\src\misc\lv_math.h
+.\objects\lv_lru.o: ..\lvgl\src\misc\lv_mem.h
+.\objects\lv_lru.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\string.h
+.\objects\lv_lru.o: ..\lvgl\src\misc\lv_assert.h
+.\objects\lv_lru.o: ..\lvgl\src\misc\lv_log.h

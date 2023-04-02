@@ -1,0 +1,32 @@
+import rtconfig
+from building import *
+
+cwd = GetCurrentDir()
+
+src = Glob('../applications/*.c') + Glob('../drivers/*.c') + Glob('../libraries/f435_437/drivers/src/*.c') + Glob('../libraries/f435_437/cmsis/cm4/device_support/*.c') + Glob('../libraries/f435_437/cmsis/cm4/device_support/startup/gcc/*.s') + Glob('../drivers/common/*.c') + Glob('../drivers/f435_437/*.c') + Glob('../drivers/usbfs_library/src/*.c')
+
+CPPPATH = [
+	cwd,
+	cwd + '/../drivers',
+	cwd + '/../libraries/f435_437/drivers/inc',
+	cwd + '/../libraries/f435_437/cmsis/cm4/core_support',
+	cwd + '/../libraries/f435_437/cmsis/cm4/device_support',
+	cwd + '/../drivers/usbfs_library/inc',
+	cwd + '/../drivers/f435_437/include',
+	cwd + '/../drivers/common/include',
+	str(Dir('#'))
+]
+
+CPPDEFINES = [
+	'SOC_FAMILY_AT32',
+	'SOC_SERIES_AT32F435',
+	'USE_STDPERIPH_DRIVER',
+	'AT32F435RGT7',
+	'c     ',
+	'm     ',
+]
+
+group = DefineGroup('Applications', src, depend = [''], CPPPATH = CPPPATH, CPPDEFINES = CPPDEFINES)
+
+Return('group')
+

@@ -1,0 +1,17 @@
+.\objects\system_at32f435_437.o: ..\..\libraries\cmsis\cm4\device_support\system_at32f435_437.c
+.\objects\system_at32f435_437.o: ..\..\libraries\cmsis\cm4\device_support\at32f435_437.h
+.\objects\system_at32f435_437.o: ..\..\libraries\cmsis\cm4\core_support\core_cm4.h
+.\objects\system_at32f435_437.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdint.h
+.\objects\system_at32f435_437.o: ..\..\libraries\cmsis\cm4\core_support\cmsis_version.h
+.\objects\system_at32f435_437.o: ..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h
+.\objects\system_at32f435_437.o: ..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h
+.\objects\system_at32f435_437.o: ..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h
+.\objects\system_at32f435_437.o: ..\..\libraries\cmsis\cm4\device_support\system_at32f435_437.h
+.\objects\system_at32f435_437.o: ..\..\libraries\drivers\inc\at32f435_437_def.h
+.\objects\system_at32f435_437.o: ..\inc\at32f435_437_conf.h
+.\objects\system_at32f435_437.o: ..\..\libraries\drivers\inc\at32f435_437_crm.h
+.\objects\system_at32f435_437.o: ..\..\libraries\cmsis\cm4\device_support\at32f435_437.h
+.\objects\system_at32f435_437.o: ..\..\libraries\drivers\inc\at32f435_437_gpio.h
+.\objects\system_at32f435_437.o: ..\..\libraries\drivers\inc\at32f435_437_pwc.h
+.\objects\system_at32f435_437.o: ..\..\libraries\drivers\inc\at32f435_437_flash.h
+.\objects\system_at32f435_437.o: ..\..\libraries\drivers\inc\at32f435_437_qspi.h

@@ -1,0 +1,807 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    flashprg.o(i.EraseChip) refers to flashprg.o(i.custom_qspi_xip_enable) for custom_qspi_xip_enable
+    flashprg.o(i.EraseChip) refers to flashprg.o(i.custom_qspi_write_enable) for custom_qspi_write_enable
+    flashprg.o(i.EraseChip) refers to flashprg.o(i.custom_qspi_chip_erase) for custom_qspi_chip_erase
+    flashprg.o(i.EraseChip) refers to flashprg.o(i.custom_qspi_busy_check) for custom_qspi_busy_check
+    flashprg.o(i.EraseChip) refers to flashprg.o(i.custom_xip_enable_config) for custom_xip_enable_config
+    flashprg.o(i.EraseSector) refers to flashprg.o(i.custom_qspi_xip_enable) for custom_qspi_xip_enable
+    flashprg.o(i.EraseSector) refers to flashprg.o(i.custom_qspi_write_enable) for custom_qspi_write_enable
+    flashprg.o(i.EraseSector) refers to flashprg.o(i.custom_qspi_sector_erase) for custom_qspi_sector_erase
+    flashprg.o(i.EraseSector) refers to flashprg.o(i.custom_qspi_busy_check) for custom_qspi_busy_check
+    flashprg.o(i.EraseSector) refers to flashprg.o(i.custom_xip_enable_config) for custom_xip_enable_config
+    flashprg.o(i.Init) refers to flashprg.o(i.init_clk) for init_clk
+    flashprg.o(i.Init) refers to flashprg.o(i.qspi_gpio_init) for qspi_gpio_init
+    flashprg.o(i.Init) refers to flashprg.o(i.qspi_cmd_init) for qspi_cmd_init
+    flashprg.o(i.Init) refers to flashprg.o(i.custom_xip_enable_config) for custom_xip_enable_config
+    flashprg.o(i.ProgramPage) refers to flashprg.o(i.custom_qspi_xip_enable) for custom_qspi_xip_enable
+    flashprg.o(i.ProgramPage) refers to flashprg.o(i.custom_qspi_write_enable) for custom_qspi_write_enable
+    flashprg.o(i.ProgramPage) refers to flashprg.o(i.custom_qspi_busy_check) for custom_qspi_busy_check
+    flashprg.o(i.ProgramPage) refers to flashprg.o(i.custom_xip_enable_config) for custom_xip_enable_config
+    flashprg.o(i.UnInit) refers to flashprg.o(i.uninit_clk) for uninit_clk
+    flashprg.o(i.UnInit) refers to flashprg.o(i.custom_xip_enable_config) for custom_xip_enable_config
+    flashprg.o(i.custom_xip_enable_config) refers to flashprg.o(i.custom_qspi_xip_enable) for custom_qspi_xip_enable
+    flashprg.o(i.init_clk) refers to at32f435_437_crm.o(i.crm_reset) for crm_reset
+    flashprg.o(i.init_clk) refers to at32f435_437_crm.o(i.crm_periph_clock_enable) for crm_periph_clock_enable
+    flashprg.o(i.init_clk) refers to at32f435_437_crm.o(i.crm_clock_source_enable) for crm_clock_source_enable
+    flashprg.o(i.init_clk) refers to at32f435_437_crm.o(i.crm_hext_stable_wait) for crm_hext_stable_wait
+    flashprg.o(i.init_clk) refers to at32f435_437_crm.o(i.crm_pll_config) for crm_pll_config
+    flashprg.o(i.init_clk) refers to at32f435_437_crm.o(i.crm_flag_get) for crm_flag_get
+    flashprg.o(i.init_clk) refers to at32f435_437_crm.o(i.crm_ahb_div_set) for crm_ahb_div_set
+    flashprg.o(i.init_clk) refers to at32f435_437_crm.o(i.crm_apb2_div_set) for crm_apb2_div_set
+    flashprg.o(i.init_clk) refers to at32f435_437_crm.o(i.crm_apb1_div_set) for crm_apb1_div_set
+    flashprg.o(i.init_clk) refers to at32f435_437_crm.o(i.crm_auto_step_mode_enable) for crm_auto_step_mode_enable
+    flashprg.o(i.init_clk) refers to at32f435_437_crm.o(i.crm_sysclk_switch) for crm_sysclk_switch
+    flashprg.o(i.init_clk) refers to at32f435_437_crm.o(i.crm_sysclk_switch_status_get) for crm_sysclk_switch_status_get
+    flashprg.o(i.init_clk) refers to system_at32f435_437.o(i.system_core_clock_update) for system_core_clock_update
+    flashprg.o(i.qspi_cmd_init) refers to flashprg.o(i.custom_qspi_xip_enable) for custom_qspi_xip_enable
+    flashprg.o(i.qspi_cmd_init) refers to flashprg.o(i.custom_qspi_rstqpi) for custom_qspi_rstqpi
+    flashprg.o(i.qspi_cmd_init) refers to flashprg.o(i.custom_qspi_rsten) for custom_qspi_rsten
+    flashprg.o(i.qspi_cmd_init) refers to flashprg.o(i.custom_qspi_rst) for custom_qspi_rst
+    flashprg.o(i.qspi_gpio_init) refers to at32f435_437_crm.o(i.crm_periph_clock_enable) for crm_periph_clock_enable
+    flashprg.o(i.qspi_gpio_init) refers to at32f435_437_gpio.o(i.gpio_default_para_init) for gpio_default_para_init
+    flashprg.o(i.qspi_gpio_init) refers to at32f435_437_gpio.o(i.gpio_init) for gpio_init
+    flashprg.o(i.qspi_gpio_init) refers to at32f435_437_gpio.o(i.gpio_pin_mux_config) for gpio_pin_mux_config
+    flashprg.o(i.qspi_gpio_init) refers to at32f435_437_qspi.o(i.qspi_xip_enable) for qspi_xip_enable
+    flashprg.o(i.qspi_gpio_init) refers to at32f435_437_qspi.o(i.qspi_clk_division_set) for qspi_clk_division_set
+    flashprg.o(i.qspi_gpio_init) refers to at32f435_437_qspi.o(i.qspi_sck_mode_set) for qspi_sck_mode_set
+    flashprg.o(i.qspi_gpio_init) refers to at32f435_437_qspi.o(i.qspi_busy_config) for qspi_busy_config
+    at32f435_437_crm.o(i.crm_clocks_freq_get) refers to at32f435_437_crm.o(i.crm_sysclk_switch_status_get) for crm_sysclk_switch_status_get
+    at32f435_437_crm.o(i.crm_clocks_freq_get) refers to lludivv7m.o(.text) for __aeabi_uldivmod
+    at32f435_437_crm.o(i.crm_clocks_freq_get) refers to at32f435_437_crm.o(.constdata) for .constdata
+    at32f435_437_crm.o(i.crm_hext_stable_wait) refers to at32f435_437_crm.o(i.crm_flag_get) for crm_flag_get
+    at32f435_437_crm.o(i.crm_hick_sclk_frequency_select) refers to at32f435_437_crm.o(i.crm_hick_divider_select) for crm_hick_divider_select
+    at32f435_437_crm.o(i.crm_usb_clock_source_select) refers to at32f435_437_crm.o(i.crm_hick_sclk_frequency_select) for crm_hick_sclk_frequency_select
+    at32f435_437_flash.o(i.flash_bank1_erase) refers to at32f435_437_flash.o(i.flash_bank1_operation_wait_for) for flash_bank1_operation_wait_for
+    at32f435_437_flash.o(i.flash_bank1_operation_wait_for) refers to at32f435_437_flash.o(i.flash_bank1_operation_status_get) for flash_bank1_operation_status_get
+    at32f435_437_flash.o(i.flash_bank2_erase) refers to at32f435_437_flash.o(i.flash_bank2_operation_wait_for) for flash_bank2_operation_wait_for
+    at32f435_437_flash.o(i.flash_bank2_operation_wait_for) refers to at32f435_437_flash.o(i.flash_bank2_operation_status_get) for flash_bank2_operation_status_get
+    at32f435_437_flash.o(i.flash_block_erase) refers to at32f435_437_flash.o(i.flash_bank1_operation_wait_for) for flash_bank1_operation_wait_for
+    at32f435_437_flash.o(i.flash_block_erase) refers to at32f435_437_flash.o(i.flash_bank2_operation_wait_for) for flash_bank2_operation_wait_for
+    at32f435_437_flash.o(i.flash_byte_program) refers to at32f435_437_flash.o(i.flash_bank1_operation_wait_for) for flash_bank1_operation_wait_for
+    at32f435_437_flash.o(i.flash_byte_program) refers to at32f435_437_flash.o(i.flash_bank2_operation_wait_for) for flash_bank2_operation_wait_for
+    at32f435_437_flash.o(i.flash_crc_calibrate) refers to at32f435_437_flash.o(i.flash_operation_wait_for) for flash_operation_wait_for
+    at32f435_437_flash.o(i.flash_eopb0_config) refers to at32f435_437_flash.o(i.flash_operation_wait_for) for flash_operation_wait_for
+    at32f435_437_flash.o(i.flash_epp_set) refers to at32f435_437_flash.o(i.flash_operation_wait_for) for flash_operation_wait_for
+    at32f435_437_flash.o(i.flash_fap_enable) refers to at32f435_437_flash.o(i.flash_operation_wait_for) for flash_operation_wait_for
+    at32f435_437_flash.o(i.flash_halfword_program) refers to at32f435_437_flash.o(i.flash_bank1_operation_wait_for) for flash_bank1_operation_wait_for
+    at32f435_437_flash.o(i.flash_halfword_program) refers to at32f435_437_flash.o(i.flash_bank2_operation_wait_for) for flash_bank2_operation_wait_for
+    at32f435_437_flash.o(i.flash_internal_all_erase) refers to at32f435_437_flash.o(i.flash_bank1_operation_wait_for) for flash_bank1_operation_wait_for
+    at32f435_437_flash.o(i.flash_internal_all_erase) refers to at32f435_437_flash.o(i.flash_bank2_operation_wait_for) for flash_bank2_operation_wait_for
+    at32f435_437_flash.o(i.flash_operation_wait_for) refers to at32f435_437_flash.o(i.flash_operation_status_get) for flash_operation_status_get
+    at32f435_437_flash.o(i.flash_sector_erase) refers to at32f435_437_flash.o(i.flash_bank1_operation_wait_for) for flash_bank1_operation_wait_for
+    at32f435_437_flash.o(i.flash_sector_erase) refers to at32f435_437_flash.o(i.flash_bank2_operation_wait_for) for flash_bank2_operation_wait_for
+    at32f435_437_flash.o(i.flash_slib_disable) refers to at32f435_437_flash.o(i.flash_operation_wait_for) for flash_operation_wait_for
+    at32f435_437_flash.o(i.flash_slib_enable) refers to at32f435_437_flash.o(i.flash_operation_wait_for) for flash_operation_wait_for
+    at32f435_437_flash.o(i.flash_ssb_set) refers to at32f435_437_flash.o(i.flash_operation_wait_for) for flash_operation_wait_for
+    at32f435_437_flash.o(i.flash_user_system_data_erase) refers to at32f435_437_flash.o(i.flash_fap_status_get) for flash_fap_status_get
+    at32f435_437_flash.o(i.flash_user_system_data_erase) refers to at32f435_437_flash.o(i.flash_operation_wait_for) for flash_operation_wait_for
+    at32f435_437_flash.o(i.flash_user_system_data_program) refers to at32f435_437_flash.o(i.flash_operation_wait_for) for flash_operation_wait_for
+    at32f435_437_flash.o(i.flash_word_program) refers to at32f435_437_flash.o(i.flash_bank1_operation_wait_for) for flash_bank1_operation_wait_for
+    at32f435_437_flash.o(i.flash_word_program) refers to at32f435_437_flash.o(i.flash_bank2_operation_wait_for) for flash_bank2_operation_wait_for
+    at32f435_437_gpio.o(i.gpio_reset) refers to at32f435_437_crm.o(i.crm_periph_reset) for crm_periph_reset
+    at32f435_437_pwc.o(i.pwc_reset) refers to at32f435_437_crm.o(i.crm_periph_reset) for crm_periph_reset
+    system_at32f435_437.o(i.system_core_clock_update) refers to at32f435_437_crm.o(i.crm_sysclk_switch_status_get) for crm_sysclk_switch_status_get
+    system_at32f435_437.o(i.system_core_clock_update) refers to lludivv7m.o(.text) for __aeabi_uldivmod
+    system_at32f435_437.o(i.system_core_clock_update) refers to system_at32f435_437.o(.data) for .data
+    system_at32f435_437.o(i.system_core_clock_update) refers to system_at32f435_437.o(.constdata) for .constdata
+    aeabi_ldiv0_sigfpe.o(.text) refers to rt_div0.o(.text) for __rt_div0
+    rt_div0.o(.text) refers to defsig_fpe_outer.o(.text) for __rt_SIGFPE
+    defsig_fpe_outer.o(.text) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig_fpe_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_fpe_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    .rev16_text                              0x00000000   Section        4  flashprg.o(.rev16_text)
+    $v0                                      0x00000000   Number         0  flashprg.o(.rev16_text)
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_ldiv0.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_div0.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_ldiv0_sigfpe.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/longlong.s                       0x00000000   Number         0  lludivv7m.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
+    ..\..\libraries\cmsis\cm4\device_support\system_at32f435_437.c 0x00000000   Number         0  system_at32f435_437.o ABSOLUTE
+    ..\..\libraries\drivers\src\at32f435_437_crm.c 0x00000000   Number         0  at32f435_437_crm.o ABSOLUTE
+    ..\..\libraries\drivers\src\at32f435_437_flash.c 0x00000000   Number         0  at32f435_437_flash.o ABSOLUTE
+    ..\..\libraries\drivers\src\at32f435_437_gpio.c 0x00000000   Number         0  at32f435_437_gpio.o ABSOLUTE
+    ..\..\libraries\drivers\src\at32f435_437_pwc.c 0x00000000   Number         0  at32f435_437_pwc.o ABSOLUTE
+    ..\..\libraries\drivers\src\at32f435_437_qspi.c 0x00000000   Number         0  at32f435_437_qspi.o ABSOLUTE
+    ..\\..\\libraries\\cmsis\\cm4\\device_support\\system_at32f435_437.c 0x00000000   Number         0  system_at32f435_437.o ABSOLUTE
+    ..\\..\\libraries\\drivers\\src\\at32f435_437_crm.c 0x00000000   Number         0  at32f435_437_crm.o ABSOLUTE
+    ..\\..\\libraries\\drivers\\src\\at32f435_437_flash.c 0x00000000   Number         0  at32f435_437_flash.o ABSOLUTE
+    ..\\..\\libraries\\drivers\\src\\at32f435_437_gpio.c 0x00000000   Number         0  at32f435_437_gpio.o ABSOLUTE
+    ..\\..\\libraries\\drivers\\src\\at32f435_437_pwc.c 0x00000000   Number         0  at32f435_437_pwc.o ABSOLUTE
+    ..\\..\\libraries\\drivers\\src\\at32f435_437_qspi.c 0x00000000   Number         0  at32f435_437_qspi.o ABSOLUTE
+    ..\\src\\FlashPrg.c                      0x00000000   Number         0  flashprg.o ABSOLUTE
+    ..\src\FlashDev.c                        0x00000000   Number         0  flashdev.o ABSOLUTE
+    ..\src\FlashPrg.c                        0x00000000   Number         0  flashprg.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    .rev16_text                              0x00000004   Section        4  at32f435_437_crm.o(.rev16_text)
+    $v0                                      0x00000004   Number         0  at32f435_437_crm.o(.rev16_text)
+    .rev16_text                              0x00000008   Section        4  at32f435_437_flash.o(.rev16_text)
+    $v0                                      0x00000008   Number         0  at32f435_437_flash.o(.rev16_text)
+    .rev16_text                              0x0000000c   Section        4  at32f435_437_gpio.o(.rev16_text)
+    $v0                                      0x0000000c   Number         0  at32f435_437_gpio.o(.rev16_text)
+    .rev16_text                              0x00000010   Section        4  at32f435_437_pwc.o(.rev16_text)
+    $v0                                      0x00000010   Number         0  at32f435_437_pwc.o(.rev16_text)
+    .rev16_text                              0x00000014   Section        4  at32f435_437_qspi.o(.rev16_text)
+    $v0                                      0x00000014   Number         0  at32f435_437_qspi.o(.rev16_text)
+    .rev16_text                              0x00000018   Section        4  system_at32f435_437.o(.rev16_text)
+    $v0                                      0x00000018   Number         0  system_at32f435_437.o(.rev16_text)
+    .revsh_text                              0x0000001c   Section        4  flashprg.o(.revsh_text)
+    $v0                                      0x0000001c   Number         0  flashprg.o(.revsh_text)
+    .revsh_text                              0x00000020   Section        4  at32f435_437_crm.o(.revsh_text)
+    $v0                                      0x00000020   Number         0  at32f435_437_crm.o(.revsh_text)
+    .revsh_text                              0x00000024   Section        4  at32f435_437_flash.o(.revsh_text)
+    $v0                                      0x00000024   Number         0  at32f435_437_flash.o(.revsh_text)
+    .revsh_text                              0x00000028   Section        4  at32f435_437_gpio.o(.revsh_text)
+    $v0                                      0x00000028   Number         0  at32f435_437_gpio.o(.revsh_text)
+    .revsh_text                              0x0000002c   Section        4  at32f435_437_pwc.o(.revsh_text)
+    $v0                                      0x0000002c   Number         0  at32f435_437_pwc.o(.revsh_text)
+    .revsh_text                              0x00000030   Section        4  at32f435_437_qspi.o(.revsh_text)
+    $v0                                      0x00000030   Number         0  at32f435_437_qspi.o(.revsh_text)
+    .revsh_text                              0x00000034   Section        4  system_at32f435_437.o(.revsh_text)
+    $v0                                      0x00000034   Number         0  system_at32f435_437.o(.revsh_text)
+    .rrx_text                                0x00000038   Section        6  flashprg.o(.rrx_text)
+    $v0                                      0x00000038   Number         0  flashprg.o(.rrx_text)
+    .rrx_text                                0x00000040   Section        6  at32f435_437_crm.o(.rrx_text)
+    $v0                                      0x00000040   Number         0  at32f435_437_crm.o(.rrx_text)
+    .rrx_text                                0x00000048   Section        6  at32f435_437_flash.o(.rrx_text)
+    $v0                                      0x00000048   Number         0  at32f435_437_flash.o(.rrx_text)
+    .rrx_text                                0x00000050   Section        6  at32f435_437_gpio.o(.rrx_text)
+    $v0                                      0x00000050   Number         0  at32f435_437_gpio.o(.rrx_text)
+    .rrx_text                                0x00000058   Section        6  at32f435_437_pwc.o(.rrx_text)
+    $v0                                      0x00000058   Number         0  at32f435_437_pwc.o(.rrx_text)
+    .rrx_text                                0x00000060   Section        6  at32f435_437_qspi.o(.rrx_text)
+    $v0                                      0x00000060   Number         0  at32f435_437_qspi.o(.rrx_text)
+    .rrx_text                                0x00000068   Section        6  system_at32f435_437.o(.rrx_text)
+    $v0                                      0x00000068   Number         0  system_at32f435_437.o(.rrx_text)
+    .text                                    0x0000006e   Section      238  lludivv7m.o(.text)
+    i.EraseChip                              0x0000015c   Section        0  flashprg.o(i.EraseChip)
+    i.EraseSector                            0x00000178   Section        0  flashprg.o(i.EraseSector)
+    i.Init                                   0x0000019a   Section        0  flashprg.o(i.Init)
+    i.ProgramPage                            0x000001b0   Section        0  flashprg.o(i.ProgramPage)
+    i.SystemInit                             0x00000210   Section        0  system_at32f435_437.o(i.SystemInit)
+    i.UnInit                                 0x0000027c   Section        0  flashprg.o(i.UnInit)
+    i.crm_ahb_div_set                        0x0000028c   Section        0  at32f435_437_crm.o(i.crm_ahb_div_set)
+    i.crm_apb1_div_set                       0x0000029c   Section        0  at32f435_437_crm.o(i.crm_apb1_div_set)
+    i.crm_apb2_div_set                       0x000002ac   Section        0  at32f435_437_crm.o(i.crm_apb2_div_set)
+    i.crm_auto_step_mode_enable              0x000002bc   Section        0  at32f435_437_crm.o(i.crm_auto_step_mode_enable)
+    i.crm_battery_powered_domain_reset       0x000002d8   Section        0  at32f435_437_crm.o(i.crm_battery_powered_domain_reset)
+    i.crm_clkout_div_set                     0x000002e8   Section        0  at32f435_437_crm.o(i.crm_clkout_div_set)
+    i.crm_clkout_to_tmr10_enable             0x00000318   Section        0  at32f435_437_crm.o(i.crm_clkout_to_tmr10_enable)
+    i.crm_clock_failure_detection_enable     0x00000328   Section        0  at32f435_437_crm.o(i.crm_clock_failure_detection_enable)
+    i.crm_clock_out1_set                     0x00000338   Section        0  at32f435_437_crm.o(i.crm_clock_out1_set)
+    i.crm_clock_out2_set                     0x00000348   Section        0  at32f435_437_crm.o(i.crm_clock_out2_set)
+    i.crm_clock_source_enable                0x00000374   Section        0  at32f435_437_crm.o(i.crm_clock_source_enable)
+    i.crm_clocks_freq_get                    0x000003b0   Section        0  at32f435_437_crm.o(i.crm_clocks_freq_get)
+    i.crm_emac_output_pulse_set              0x00000458   Section        0  at32f435_437_crm.o(i.crm_emac_output_pulse_set)
+    i.crm_ertc_clock_enable                  0x00000468   Section        0  at32f435_437_crm.o(i.crm_ertc_clock_enable)
+    i.crm_ertc_clock_select                  0x00000478   Section        0  at32f435_437_crm.o(i.crm_ertc_clock_select)
+    i.crm_flag_clear                         0x00000498   Section        0  at32f435_437_crm.o(i.crm_flag_clear)
+    i.crm_flag_get                           0x0000050c   Section        0  at32f435_437_crm.o(i.crm_flag_get)
+    i.crm_hext_bypass                        0x00000530   Section        0  at32f435_437_crm.o(i.crm_hext_bypass)
+    i.crm_hext_stable_wait                   0x00000540   Section        0  at32f435_437_crm.o(i.crm_hext_stable_wait)
+    i.crm_hick_clock_calibration_set         0x00000568   Section        0  at32f435_437_crm.o(i.crm_hick_clock_calibration_set)
+    i.crm_hick_clock_trimming_set            0x00000590   Section        0  at32f435_437_crm.o(i.crm_hick_clock_trimming_set)
+    i.crm_hick_divider_select                0x000005a0   Section        0  at32f435_437_crm.o(i.crm_hick_divider_select)
+    i.crm_hick_sclk_frequency_select         0x000005b0   Section        0  at32f435_437_crm.o(i.crm_hick_sclk_frequency_select)
+    i.crm_interrupt_enable                   0x000005cc   Section        0  at32f435_437_crm.o(i.crm_interrupt_enable)
+    i.crm_lext_bypass                        0x000005e4   Section        0  at32f435_437_crm.o(i.crm_lext_bypass)
+    i.crm_periph_clock_enable                0x000005f4   Section        0  at32f435_437_crm.o(i.crm_periph_clock_enable)
+    i.crm_periph_lowpower_mode_enable        0x0000061c   Section        0  at32f435_437_crm.o(i.crm_periph_lowpower_mode_enable)
+    i.crm_periph_reset                       0x00000644   Section        0  at32f435_437_crm.o(i.crm_periph_reset)
+    i.crm_pll_config                         0x0000066c   Section        0  at32f435_437_crm.o(i.crm_pll_config)
+    i.crm_pll_parameter_calculate            0x000006a4   Section        0  at32f435_437_crm.o(i.crm_pll_parameter_calculate)
+    i.crm_reset                              0x00000754   Section        0  at32f435_437_crm.o(i.crm_reset)
+    i.crm_sysclk_switch                      0x000007ac   Section        0  at32f435_437_crm.o(i.crm_sysclk_switch)
+    i.crm_sysclk_switch_status_get           0x000007bc   Section        0  at32f435_437_crm.o(i.crm_sysclk_switch_status_get)
+    i.crm_usb_clock_div_set                  0x000007cc   Section        0  at32f435_437_crm.o(i.crm_usb_clock_div_set)
+    i.crm_usb_clock_source_select            0x000007dc   Section        0  at32f435_437_crm.o(i.crm_usb_clock_source_select)
+    i.custom_qspi_busy_check                 0x000007f8   Section        0  flashprg.o(i.custom_qspi_busy_check)
+    i.custom_qspi_chip_erase                 0x00000820   Section        0  flashprg.o(i.custom_qspi_chip_erase)
+    i.custom_qspi_rst                        0x00000848   Section        0  flashprg.o(i.custom_qspi_rst)
+    i.custom_qspi_rsten                      0x00000870   Section        0  flashprg.o(i.custom_qspi_rsten)
+    i.custom_qspi_rstqpi                     0x00000898   Section        0  flashprg.o(i.custom_qspi_rstqpi)
+    i.custom_qspi_sector_erase               0x000008c0   Section        0  flashprg.o(i.custom_qspi_sector_erase)
+    i.custom_qspi_write_enable               0x000008ec   Section        0  flashprg.o(i.custom_qspi_write_enable)
+    i.custom_qspi_xip_enable                 0x00000914   Section        0  flashprg.o(i.custom_qspi_xip_enable)
+    i.custom_xip_enable_config               0x00000964   Section        0  flashprg.o(i.custom_xip_enable_config)
+    i.flash_bank1_erase                      0x000009cc   Section        0  at32f435_437_flash.o(i.flash_bank1_erase)
+    i.flash_bank1_lock                       0x000009f4   Section        0  at32f435_437_flash.o(i.flash_bank1_lock)
+    i.flash_bank1_operation_status_get       0x00000a04   Section        0  at32f435_437_flash.o(i.flash_bank1_operation_status_get)
+    i.flash_bank1_operation_wait_for         0x00000a2c   Section        0  at32f435_437_flash.o(i.flash_bank1_operation_wait_for)
+    i.flash_bank1_unlock                     0x00000a4c   Section        0  at32f435_437_flash.o(i.flash_bank1_unlock)
+    i.flash_bank2_erase                      0x00000a64   Section        0  at32f435_437_flash.o(i.flash_bank2_erase)
+    i.flash_bank2_lock                       0x00000a8c   Section        0  at32f435_437_flash.o(i.flash_bank2_lock)
+    i.flash_bank2_operation_status_get       0x00000a9c   Section        0  at32f435_437_flash.o(i.flash_bank2_operation_status_get)
+    i.flash_bank2_operation_wait_for         0x00000ac4   Section        0  at32f435_437_flash.o(i.flash_bank2_operation_wait_for)
+    i.flash_bank2_unlock                     0x00000ae4   Section        0  at32f435_437_flash.o(i.flash_bank2_unlock)
+    i.flash_block_erase                      0x00000afc   Section        0  at32f435_437_flash.o(i.flash_block_erase)
+    i.flash_byte_program                     0x00000b64   Section        0  at32f435_437_flash.o(i.flash_byte_program)
+    i.flash_continue_read_enable             0x00000bbc   Section        0  at32f435_437_flash.o(i.flash_continue_read_enable)
+    i.flash_crc_calibrate                    0x00000bcc   Section        0  at32f435_437_flash.o(i.flash_crc_calibrate)
+    i.flash_eopb0_config                     0x00000bfc   Section        0  at32f435_437_flash.o(i.flash_eopb0_config)
+    i.flash_epp_set                          0x00000c40   Section        0  at32f435_437_flash.o(i.flash_epp_set)
+    i.flash_epp_status_get                   0x00000d10   Section        0  at32f435_437_flash.o(i.flash_epp_status_get)
+    i.flash_fap_enable                       0x00000d24   Section        0  at32f435_437_flash.o(i.flash_fap_enable)
+    i.flash_fap_status_get                   0x00000d9c   Section        0  at32f435_437_flash.o(i.flash_fap_status_get)
+    i.flash_flag_clear                       0x00000dac   Section        0  at32f435_437_flash.o(i.flash_flag_clear)
+    i.flash_flag_get                         0x00000dcc   Section        0  at32f435_437_flash.o(i.flash_flag_get)
+    i.flash_halfword_program                 0x00000e04   Section        0  at32f435_437_flash.o(i.flash_halfword_program)
+    i.flash_internal_all_erase               0x00000e5c   Section        0  at32f435_437_flash.o(i.flash_internal_all_erase)
+    i.flash_interrupt_enable                 0x00000eac   Section        0  at32f435_437_flash.o(i.flash_interrupt_enable)
+    i.flash_lock                             0x00000eec   Section        0  at32f435_437_flash.o(i.flash_lock)
+    i.flash_nzw_boost_enable                 0x00000f08   Section        0  at32f435_437_flash.o(i.flash_nzw_boost_enable)
+    i.flash_operation_status_get             0x00000f18   Section        0  at32f435_437_flash.o(i.flash_operation_status_get)
+    i.flash_operation_wait_for               0x00000f40   Section        0  at32f435_437_flash.o(i.flash_operation_wait_for)
+    i.flash_sector_erase                     0x00000f60   Section        0  at32f435_437_flash.o(i.flash_sector_erase)
+    i.flash_slib_disable                     0x00000fc8   Section        0  at32f435_437_flash.o(i.flash_slib_disable)
+    i.flash_slib_enable                      0x00000ff0   Section        0  at32f435_437_flash.o(i.flash_slib_enable)
+    i.flash_slib_end_sector_get              0x00001064   Section        0  at32f435_437_flash.o(i.flash_slib_end_sector_get)
+    i.flash_slib_inststart_sector_get        0x00001070   Section        0  at32f435_437_flash.o(i.flash_slib_inststart_sector_get)
+    i.flash_slib_remaining_count_get         0x0000107c   Section        0  at32f435_437_flash.o(i.flash_slib_remaining_count_get)
+    i.flash_slib_start_sector_get            0x0000108c   Section        0  at32f435_437_flash.o(i.flash_slib_start_sector_get)
+    i.flash_slib_state_get                   0x00001098   Section        0  at32f435_437_flash.o(i.flash_slib_state_get)
+    i.flash_ssb_set                          0x000010ac   Section        0  at32f435_437_flash.o(i.flash_ssb_set)
+    i.flash_ssb_status_get                   0x000010f0   Section        0  at32f435_437_flash.o(i.flash_ssb_status_get)
+    i.flash_unlock                           0x00001100   Section        0  at32f435_437_flash.o(i.flash_unlock)
+    i.flash_user_system_data_erase           0x00001120   Section        0  at32f435_437_flash.o(i.flash_user_system_data_erase)
+    i.flash_user_system_data_program         0x00001198   Section        0  at32f435_437_flash.o(i.flash_user_system_data_program)
+    i.flash_word_program                     0x000011e8   Section        0  at32f435_437_flash.o(i.flash_word_program)
+    i.gpio_bits_reset                        0x00001240   Section        0  at32f435_437_gpio.o(i.gpio_bits_reset)
+    i.gpio_bits_set                          0x00001244   Section        0  at32f435_437_gpio.o(i.gpio_bits_set)
+    i.gpio_bits_write                        0x00001248   Section        0  at32f435_437_gpio.o(i.gpio_bits_write)
+    i.gpio_default_para_init                 0x00001252   Section        0  at32f435_437_gpio.o(i.gpio_default_para_init)
+    i.gpio_init                              0x00001266   Section        0  at32f435_437_gpio.o(i.gpio_init)
+    i.gpio_input_data_bit_read               0x000012ca   Section        0  at32f435_437_gpio.o(i.gpio_input_data_bit_read)
+    i.gpio_input_data_read                   0x000012d8   Section        0  at32f435_437_gpio.o(i.gpio_input_data_read)
+    i.gpio_output_data_bit_read              0x000012de   Section        0  at32f435_437_gpio.o(i.gpio_output_data_bit_read)
+    i.gpio_output_data_read                  0x000012ec   Section        0  at32f435_437_gpio.o(i.gpio_output_data_read)
+    i.gpio_pin_mux_config                    0x000012f2   Section        0  at32f435_437_gpio.o(i.gpio_pin_mux_config)
+    i.gpio_pin_wp_config                     0x00001322   Section        0  at32f435_437_gpio.o(i.gpio_pin_wp_config)
+    i.gpio_pins_huge_driven_config           0x00001332   Section        0  at32f435_437_gpio.o(i.gpio_pins_huge_driven_config)
+    i.gpio_port_write                        0x00001342   Section        0  at32f435_437_gpio.o(i.gpio_port_write)
+    i.gpio_reset                             0x00001348   Section        0  at32f435_437_gpio.o(i.gpio_reset)
+    i.init_clk                               0x000013ec   Section        0  flashprg.o(i.init_clk)
+    i.pwc_battery_powered_domain_access      0x00001480   Section        0  at32f435_437_pwc.o(i.pwc_battery_powered_domain_access)
+    i.pwc_deep_sleep_mode_enter              0x00001490   Section        0  at32f435_437_pwc.o(i.pwc_deep_sleep_mode_enter)
+    i.pwc_flag_clear                         0x000014bc   Section        0  at32f435_437_pwc.o(i.pwc_flag_clear)
+    i.pwc_flag_get                           0x000014dc   Section        0  at32f435_437_pwc.o(i.pwc_flag_get)
+    i.pwc_power_voltage_monitor_enable       0x000014f0   Section        0  at32f435_437_pwc.o(i.pwc_power_voltage_monitor_enable)
+    i.pwc_pvm_level_select                   0x00001500   Section        0  at32f435_437_pwc.o(i.pwc_pvm_level_select)
+    i.pwc_reset                              0x00001510   Section        0  at32f435_437_pwc.o(i.pwc_reset)
+    i.pwc_sleep_mode_enter                   0x0000152c   Section        0  at32f435_437_pwc.o(i.pwc_sleep_mode_enter)
+    i.pwc_standby_mode_enter                 0x00001550   Section        0  at32f435_437_pwc.o(i.pwc_standby_mode_enter)
+    i.pwc_voltage_regulate_set               0x00001578   Section        0  at32f435_437_pwc.o(i.pwc_voltage_regulate_set)
+    i.pwc_wakeup_pin_enable                  0x00001588   Section        0  at32f435_437_pwc.o(i.pwc_wakeup_pin_enable)
+    i.qspi_busy_config                       0x000015a0   Section        0  at32f435_437_qspi.o(i.qspi_busy_config)
+    i.qspi_byte_read                         0x000015aa   Section        0  at32f435_437_qspi.o(i.qspi_byte_read)
+    i.qspi_byte_write                        0x000015b0   Section        0  at32f435_437_qspi.o(i.qspi_byte_write)
+    i.qspi_clk_division_set                  0x000015b6   Section        0  at32f435_437_qspi.o(i.qspi_clk_division_set)
+    i.qspi_cmd_init                          0x000015c0   Section        0  flashprg.o(i.qspi_cmd_init)
+    i.qspi_cmd_operation_kick                0x00001608   Section        0  at32f435_437_qspi.o(i.qspi_cmd_operation_kick)
+    i.qspi_dma_enable                        0x0000164c   Section        0  at32f435_437_qspi.o(i.qspi_dma_enable)
+    i.qspi_dma_rx_threshold_set              0x00001656   Section        0  at32f435_437_qspi.o(i.qspi_dma_rx_threshold_set)
+    i.qspi_dma_tx_threshold_set              0x00001660   Section        0  at32f435_437_qspi.o(i.qspi_dma_tx_threshold_set)
+    i.qspi_encryption_enable                 0x0000166a   Section        0  at32f435_437_qspi.o(i.qspi_encryption_enable)
+    i.qspi_flag_clear                        0x00001674   Section        0  at32f435_437_qspi.o(i.qspi_flag_clear)
+    i.qspi_flag_get                          0x0000167a   Section        0  at32f435_437_qspi.o(i.qspi_flag_get)
+    i.qspi_gpio_init                         0x000016a0   Section        0  flashprg.o(i.qspi_gpio_init)
+    i.qspi_half_word_read                    0x000017c0   Section        0  at32f435_437_qspi.o(i.qspi_half_word_read)
+    i.qspi_half_word_write                   0x000017c6   Section        0  at32f435_437_qspi.o(i.qspi_half_word_write)
+    i.qspi_interrupt_enable                  0x000017cc   Section        0  at32f435_437_qspi.o(i.qspi_interrupt_enable)
+    i.qspi_sck_mode_set                      0x000017d6   Section        0  at32f435_437_qspi.o(i.qspi_sck_mode_set)
+    i.qspi_word_read                         0x000017e0   Section        0  at32f435_437_qspi.o(i.qspi_word_read)
+    i.qspi_word_write                        0x000017e6   Section        0  at32f435_437_qspi.o(i.qspi_word_write)
+    i.qspi_xip_cache_bypass_set              0x000017ec   Section        0  at32f435_437_qspi.o(i.qspi_xip_cache_bypass_set)
+    i.qspi_xip_enable                        0x000017f6   Section        0  at32f435_437_qspi.o(i.qspi_xip_enable)
+    i.qspi_xip_init                          0x0000182e   Section        0  at32f435_437_qspi.o(i.qspi_xip_init)
+    i.system_core_clock_update               0x00001880   Section        0  system_at32f435_437.o(i.system_core_clock_update)
+    i.uninit_clk                             0x0000190c   Section        0  flashprg.o(i.uninit_clk)
+    .constdata                               0x00001934   Section       38  at32f435_437_crm.o(.constdata)
+    pll_fr_table                             0x00001934   Data           6  at32f435_437_crm.o(.constdata)
+    ahb_apb1_div_table                       0x0000193a   Data           8  at32f435_437_crm.o(.constdata)
+    ahb_apb2_div_table                       0x00001942   Data           8  at32f435_437_crm.o(.constdata)
+    sclk_ahb_div_table                       0x0000194a   Data          16  at32f435_437_crm.o(.constdata)
+    .constdata                               0x0000195c   Section        8  at32f435_437_flash.o(.constdata)
+    .constdata                               0x00001964   Section       22  system_at32f435_437.o(.constdata)
+    pll_fr_table                             0x00001964   Data           6  system_at32f435_437.o(.constdata)
+    sys_ahb_div_table                        0x0000196a   Data          16  system_at32f435_437.o(.constdata)
+    .data                                    0x00001980   Section        4  system_at32f435_437.o(.data)
+    .constdata                               0x00001984   Section     4256  flashdev.o(.constdata)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$RWPI$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __asm___10_FlashPrg_c_52eedaf1____REV16  0x00000001   Thumb Code     4  flashprg.o(.rev16_text)
+    __sigvec_lookup                           - Undefined Weak Reference
+    __asm___18_at32f435_437_crm_c_ec94e075____REV16 0x00000005   Thumb Code     4  at32f435_437_crm.o(.rev16_text)
+    __asm___20_at32f435_437_flash_c_a93d10d2____REV16 0x00000009   Thumb Code     4  at32f435_437_flash.o(.rev16_text)
+    __asm___19_at32f435_437_gpio_c_f92fc144____REV16 0x0000000d   Thumb Code     4  at32f435_437_gpio.o(.rev16_text)
+    __asm___18_at32f435_437_pwc_c_6106ebf8____REV16 0x00000011   Thumb Code     4  at32f435_437_pwc.o(.rev16_text)
+    __asm___19_at32f435_437_qspi_c_72046f36____REV16 0x00000015   Thumb Code     4  at32f435_437_qspi.o(.rev16_text)
+    __asm___21_system_at32f435_437_c_5d298f4b____REV16 0x00000019   Thumb Code     4  system_at32f435_437.o(.rev16_text)
+    __asm___10_FlashPrg_c_52eedaf1____REVSH  0x0000001d   Thumb Code     4  flashprg.o(.revsh_text)
+    __asm___18_at32f435_437_crm_c_ec94e075____REVSH 0x00000021   Thumb Code     4  at32f435_437_crm.o(.revsh_text)
+    __asm___20_at32f435_437_flash_c_a93d10d2____REVSH 0x00000025   Thumb Code     4  at32f435_437_flash.o(.revsh_text)
+    __asm___19_at32f435_437_gpio_c_f92fc144____REVSH 0x00000029   Thumb Code     4  at32f435_437_gpio.o(.revsh_text)
+    __asm___18_at32f435_437_pwc_c_6106ebf8____REVSH 0x0000002d   Thumb Code     4  at32f435_437_pwc.o(.revsh_text)
+    __asm___19_at32f435_437_qspi_c_72046f36____REVSH 0x00000031   Thumb Code     4  at32f435_437_qspi.o(.revsh_text)
+    __asm___21_system_at32f435_437_c_5d298f4b____REVSH 0x00000035   Thumb Code     4  system_at32f435_437.o(.revsh_text)
+    __asm___10_FlashPrg_c_52eedaf1____RRX    0x00000039   Thumb Code     6  flashprg.o(.rrx_text)
+    __asm___18_at32f435_437_crm_c_ec94e075____RRX 0x00000041   Thumb Code     6  at32f435_437_crm.o(.rrx_text)
+    __asm___20_at32f435_437_flash_c_a93d10d2____RRX 0x00000049   Thumb Code     6  at32f435_437_flash.o(.rrx_text)
+    __asm___19_at32f435_437_gpio_c_f92fc144____RRX 0x00000051   Thumb Code     6  at32f435_437_gpio.o(.rrx_text)
+    __asm___18_at32f435_437_pwc_c_6106ebf8____RRX 0x00000059   Thumb Code     6  at32f435_437_pwc.o(.rrx_text)
+    __asm___19_at32f435_437_qspi_c_72046f36____RRX 0x00000061   Thumb Code     6  at32f435_437_qspi.o(.rrx_text)
+    __asm___21_system_at32f435_437_c_5d298f4b____RRX 0x00000069   Thumb Code     6  system_at32f435_437.o(.rrx_text)
+    __aeabi_uldivmod                         0x0000006f   Thumb Code     0  lludivv7m.o(.text)
+    _ll_udiv                                 0x0000006f   Thumb Code   238  lludivv7m.o(.text)
+    EraseChip                                0x0000015d   Thumb Code    28  flashprg.o(i.EraseChip)
+    EraseSector                              0x00000179   Thumb Code    34  flashprg.o(i.EraseSector)
+    Init                                     0x0000019b   Thumb Code    22  flashprg.o(i.Init)
+    ProgramPage                              0x000001b1   Thumb Code    84  flashprg.o(i.ProgramPage)
+    SystemInit                               0x00000211   Thumb Code    92  system_at32f435_437.o(i.SystemInit)
+    UnInit                                   0x0000027d   Thumb Code    14  flashprg.o(i.UnInit)
+    crm_ahb_div_set                          0x0000028d   Thumb Code    12  at32f435_437_crm.o(i.crm_ahb_div_set)
+    crm_apb1_div_set                         0x0000029d   Thumb Code    12  at32f435_437_crm.o(i.crm_apb1_div_set)
+    crm_apb2_div_set                         0x000002ad   Thumb Code    12  at32f435_437_crm.o(i.crm_apb2_div_set)
+    crm_auto_step_mode_enable                0x000002bd   Thumb Code    22  at32f435_437_crm.o(i.crm_auto_step_mode_enable)
+    crm_battery_powered_domain_reset         0x000002d9   Thumb Code    12  at32f435_437_crm.o(i.crm_battery_powered_domain_reset)
+    crm_clkout_div_set                       0x000002e9   Thumb Code    44  at32f435_437_crm.o(i.crm_clkout_div_set)
+    crm_clkout_to_tmr10_enable               0x00000319   Thumb Code    12  at32f435_437_crm.o(i.crm_clkout_to_tmr10_enable)
+    crm_clock_failure_detection_enable       0x00000329   Thumb Code    12  at32f435_437_crm.o(i.crm_clock_failure_detection_enable)
+    crm_clock_out1_set                       0x00000339   Thumb Code    12  at32f435_437_crm.o(i.crm_clock_out1_set)
+    crm_clock_out2_set                       0x00000349   Thumb Code    38  at32f435_437_crm.o(i.crm_clock_out2_set)
+    crm_clock_source_enable                  0x00000375   Thumb Code    54  at32f435_437_crm.o(i.crm_clock_source_enable)
+    crm_clocks_freq_get                      0x000003b1   Thumb Code   152  at32f435_437_crm.o(i.crm_clocks_freq_get)
+    crm_emac_output_pulse_set                0x00000459   Thumb Code    12  at32f435_437_crm.o(i.crm_emac_output_pulse_set)
+    crm_ertc_clock_enable                    0x00000469   Thumb Code    12  at32f435_437_crm.o(i.crm_ertc_clock_enable)
+    crm_ertc_clock_select                    0x00000479   Thumb Code    26  at32f435_437_crm.o(i.crm_ertc_clock_select)
+    crm_flag_clear                           0x00000499   Thumb Code   108  at32f435_437_crm.o(i.crm_flag_clear)
+    crm_flag_get                             0x0000050d   Thumb Code    30  at32f435_437_crm.o(i.crm_flag_get)
+    crm_hext_bypass                          0x00000531   Thumb Code    12  at32f435_437_crm.o(i.crm_hext_bypass)
+    crm_hext_stable_wait                     0x00000541   Thumb Code    40  at32f435_437_crm.o(i.crm_hext_stable_wait)
+    crm_hick_clock_calibration_set           0x00000569   Thumb Code    34  at32f435_437_crm.o(i.crm_hick_clock_calibration_set)
+    crm_hick_clock_trimming_set              0x00000591   Thumb Code    12  at32f435_437_crm.o(i.crm_hick_clock_trimming_set)
+    crm_hick_divider_select                  0x000005a1   Thumb Code    12  at32f435_437_crm.o(i.crm_hick_divider_select)
+    crm_hick_sclk_frequency_select           0x000005b1   Thumb Code    22  at32f435_437_crm.o(i.crm_hick_sclk_frequency_select)
+    crm_interrupt_enable                     0x000005cd   Thumb Code    18  at32f435_437_crm.o(i.crm_interrupt_enable)
+    crm_lext_bypass                          0x000005e5   Thumb Code    12  at32f435_437_crm.o(i.crm_lext_bypass)
+    crm_periph_clock_enable                  0x000005f5   Thumb Code    36  at32f435_437_crm.o(i.crm_periph_clock_enable)
+    crm_periph_lowpower_mode_enable          0x0000061d   Thumb Code    36  at32f435_437_crm.o(i.crm_periph_lowpower_mode_enable)
+    crm_periph_reset                         0x00000645   Thumb Code    36  at32f435_437_crm.o(i.crm_periph_reset)
+    crm_pll_config                           0x0000066d   Thumb Code    52  at32f435_437_crm.o(i.crm_pll_config)
+    crm_pll_parameter_calculate              0x000006a5   Thumb Code   166  at32f435_437_crm.o(i.crm_pll_parameter_calculate)
+    crm_reset                                0x00000755   Thumb Code    74  at32f435_437_crm.o(i.crm_reset)
+    crm_sysclk_switch                        0x000007ad   Thumb Code    12  at32f435_437_crm.o(i.crm_sysclk_switch)
+    crm_sysclk_switch_status_get             0x000007bd   Thumb Code    10  at32f435_437_crm.o(i.crm_sysclk_switch_status_get)
+    crm_usb_clock_div_set                    0x000007cd   Thumb Code    12  at32f435_437_crm.o(i.crm_usb_clock_div_set)
+    crm_usb_clock_source_select              0x000007dd   Thumb Code    24  at32f435_437_crm.o(i.crm_usb_clock_source_select)
+    custom_qspi_busy_check                   0x000007f9   Thumb Code    32  flashprg.o(i.custom_qspi_busy_check)
+    custom_qspi_chip_erase                   0x00000821   Thumb Code    32  flashprg.o(i.custom_qspi_chip_erase)
+    custom_qspi_rst                          0x00000849   Thumb Code    32  flashprg.o(i.custom_qspi_rst)
+    custom_qspi_rsten                        0x00000871   Thumb Code    32  flashprg.o(i.custom_qspi_rsten)
+    custom_qspi_rstqpi                       0x00000899   Thumb Code    32  flashprg.o(i.custom_qspi_rstqpi)
+    custom_qspi_sector_erase                 0x000008c1   Thumb Code    32  flashprg.o(i.custom_qspi_sector_erase)
+    custom_qspi_write_enable                 0x000008ed   Thumb Code    32  flashprg.o(i.custom_qspi_write_enable)
+    custom_qspi_xip_enable                   0x00000915   Thumb Code    76  flashprg.o(i.custom_qspi_xip_enable)
+    custom_xip_enable_config                 0x00000965   Thumb Code    94  flashprg.o(i.custom_xip_enable_config)
+    flash_bank1_erase                        0x000009cd   Thumb Code    36  at32f435_437_flash.o(i.flash_bank1_erase)
+    flash_bank1_lock                         0x000009f5   Thumb Code    12  at32f435_437_flash.o(i.flash_bank1_lock)
+    flash_bank1_operation_status_get         0x00000a05   Thumb Code    34  at32f435_437_flash.o(i.flash_bank1_operation_status_get)
+    flash_bank1_operation_wait_for           0x00000a2d   Thumb Code    32  at32f435_437_flash.o(i.flash_bank1_operation_wait_for)
+    flash_bank1_unlock                       0x00000a4d   Thumb Code    12  at32f435_437_flash.o(i.flash_bank1_unlock)
+    flash_bank2_erase                        0x00000a65   Thumb Code    36  at32f435_437_flash.o(i.flash_bank2_erase)
+    flash_bank2_lock                         0x00000a8d   Thumb Code    12  at32f435_437_flash.o(i.flash_bank2_lock)
+    flash_bank2_operation_status_get         0x00000a9d   Thumb Code    34  at32f435_437_flash.o(i.flash_bank2_operation_status_get)
+    flash_bank2_operation_wait_for           0x00000ac5   Thumb Code    32  at32f435_437_flash.o(i.flash_bank2_operation_wait_for)
+    flash_bank2_unlock                       0x00000ae5   Thumb Code    12  at32f435_437_flash.o(i.flash_bank2_unlock)
+    flash_block_erase                        0x00000afd   Thumb Code   100  at32f435_437_flash.o(i.flash_block_erase)
+    flash_byte_program                       0x00000b65   Thumb Code    82  at32f435_437_flash.o(i.flash_byte_program)
+    flash_continue_read_enable               0x00000bbd   Thumb Code    12  at32f435_437_flash.o(i.flash_continue_read_enable)
+    flash_crc_calibrate                      0x00000bcd   Thumb Code    44  at32f435_437_flash.o(i.flash_crc_calibrate)
+    flash_eopb0_config                       0x00000bfd   Thumb Code    52  at32f435_437_flash.o(i.flash_eopb0_config)
+    flash_epp_set                            0x00000c41   Thumb Code   192  at32f435_437_flash.o(i.flash_epp_set)
+    flash_epp_status_get                     0x00000d11   Thumb Code    16  at32f435_437_flash.o(i.flash_epp_status_get)
+    flash_fap_enable                         0x00000d25   Thumb Code   104  at32f435_437_flash.o(i.flash_fap_enable)
+    flash_fap_status_get                     0x00000d9d   Thumb Code    10  at32f435_437_flash.o(i.flash_fap_status_get)
+    flash_flag_clear                         0x00000dad   Thumb Code    28  at32f435_437_flash.o(i.flash_flag_clear)
+    flash_flag_get                           0x00000dcd   Thumb Code    52  at32f435_437_flash.o(i.flash_flag_get)
+    flash_halfword_program                   0x00000e05   Thumb Code    82  at32f435_437_flash.o(i.flash_halfword_program)
+    flash_internal_all_erase                 0x00000e5d   Thumb Code    76  at32f435_437_flash.o(i.flash_internal_all_erase)
+    flash_interrupt_enable                   0x00000ead   Thumb Code    54  at32f435_437_flash.o(i.flash_interrupt_enable)
+    flash_lock                               0x00000eed   Thumb Code    24  at32f435_437_flash.o(i.flash_lock)
+    flash_nzw_boost_enable                   0x00000f09   Thumb Code    12  at32f435_437_flash.o(i.flash_nzw_boost_enable)
+    flash_operation_status_get               0x00000f19   Thumb Code    34  at32f435_437_flash.o(i.flash_operation_status_get)
+    flash_operation_wait_for                 0x00000f41   Thumb Code    32  at32f435_437_flash.o(i.flash_operation_wait_for)
+    flash_sector_erase                       0x00000f61   Thumb Code   100  at32f435_437_flash.o(i.flash_sector_erase)
+    flash_slib_disable                       0x00000fc9   Thumb Code    34  at32f435_437_flash.o(i.flash_slib_disable)
+    flash_slib_enable                        0x00000ff1   Thumb Code   108  at32f435_437_flash.o(i.flash_slib_enable)
+    flash_slib_end_sector_get                0x00001065   Thumb Code     8  at32f435_437_flash.o(i.flash_slib_end_sector_get)
+    flash_slib_inststart_sector_get          0x00001071   Thumb Code     8  at32f435_437_flash.o(i.flash_slib_inststart_sector_get)
+    flash_slib_remaining_count_get           0x0000107d   Thumb Code    10  at32f435_437_flash.o(i.flash_slib_remaining_count_get)
+    flash_slib_start_sector_get              0x0000108d   Thumb Code     8  at32f435_437_flash.o(i.flash_slib_start_sector_get)
+    flash_slib_state_get                     0x00001099   Thumb Code    16  at32f435_437_flash.o(i.flash_slib_state_get)
+    flash_ssb_set                            0x000010ad   Thumb Code    52  at32f435_437_flash.o(i.flash_ssb_set)
+    flash_ssb_status_get                     0x000010f1   Thumb Code    10  at32f435_437_flash.o(i.flash_ssb_status_get)
+    flash_unlock                             0x00001101   Thumb Code    20  at32f435_437_flash.o(i.flash_unlock)
+    flash_user_system_data_erase             0x00001121   Thumb Code   102  at32f435_437_flash.o(i.flash_user_system_data_erase)
+    flash_user_system_data_program           0x00001199   Thumb Code    64  at32f435_437_flash.o(i.flash_user_system_data_program)
+    flash_word_program                       0x000011e9   Thumb Code    82  at32f435_437_flash.o(i.flash_word_program)
+    gpio_bits_reset                          0x00001241   Thumb Code     4  at32f435_437_gpio.o(i.gpio_bits_reset)
+    gpio_bits_set                            0x00001245   Thumb Code     4  at32f435_437_gpio.o(i.gpio_bits_set)
+    gpio_bits_write                          0x00001249   Thumb Code    10  at32f435_437_gpio.o(i.gpio_bits_write)
+    gpio_default_para_init                   0x00001253   Thumb Code    20  at32f435_437_gpio.o(i.gpio_default_para_init)
+    gpio_init                                0x00001267   Thumb Code   100  at32f435_437_gpio.o(i.gpio_init)
+    gpio_input_data_bit_read                 0x000012cb   Thumb Code    14  at32f435_437_gpio.o(i.gpio_input_data_bit_read)
+    gpio_input_data_read                     0x000012d9   Thumb Code     6  at32f435_437_gpio.o(i.gpio_input_data_read)
+    gpio_output_data_bit_read                0x000012df   Thumb Code    14  at32f435_437_gpio.o(i.gpio_output_data_bit_read)
+    gpio_output_data_read                    0x000012ed   Thumb Code     6  at32f435_437_gpio.o(i.gpio_output_data_read)
+    gpio_pin_mux_config                      0x000012f3   Thumb Code    48  at32f435_437_gpio.o(i.gpio_pin_mux_config)
+    gpio_pin_wp_config                       0x00001323   Thumb Code    16  at32f435_437_gpio.o(i.gpio_pin_wp_config)
+    gpio_pins_huge_driven_config             0x00001333   Thumb Code    16  at32f435_437_gpio.o(i.gpio_pins_huge_driven_config)
+    gpio_port_write                          0x00001343   Thumb Code     4  at32f435_437_gpio.o(i.gpio_port_write)
+    gpio_reset                               0x00001349   Thumb Code   128  at32f435_437_gpio.o(i.gpio_reset)
+    init_clk                                 0x000013ed   Thumb Code   136  flashprg.o(i.init_clk)
+    pwc_battery_powered_domain_access        0x00001481   Thumb Code    12  at32f435_437_pwc.o(i.pwc_battery_powered_domain_access)
+    pwc_deep_sleep_mode_enter                0x00001491   Thumb Code    38  at32f435_437_pwc.o(i.pwc_deep_sleep_mode_enter)
+    pwc_flag_clear                           0x000014bd   Thumb Code    28  at32f435_437_pwc.o(i.pwc_flag_clear)
+    pwc_flag_get                             0x000014dd   Thumb Code    16  at32f435_437_pwc.o(i.pwc_flag_get)
+    pwc_power_voltage_monitor_enable         0x000014f1   Thumb Code    12  at32f435_437_pwc.o(i.pwc_power_voltage_monitor_enable)
+    pwc_pvm_level_select                     0x00001501   Thumb Code    12  at32f435_437_pwc.o(i.pwc_pvm_level_select)
+    pwc_reset                                0x00001511   Thumb Code    24  at32f435_437_pwc.o(i.pwc_reset)
+    pwc_sleep_mode_enter                     0x0000152d   Thumb Code    30  at32f435_437_pwc.o(i.pwc_sleep_mode_enter)
+    pwc_standby_mode_enter                   0x00001551   Thumb Code    32  at32f435_437_pwc.o(i.pwc_standby_mode_enter)
+    pwc_voltage_regulate_set                 0x00001579   Thumb Code    12  at32f435_437_pwc.o(i.pwc_voltage_regulate_set)
+    pwc_wakeup_pin_enable                    0x00001589   Thumb Code    18  at32f435_437_pwc.o(i.pwc_wakeup_pin_enable)
+    qspi_busy_config                         0x000015a1   Thumb Code    10  at32f435_437_qspi.o(i.qspi_busy_config)
+    qspi_byte_read                           0x000015ab   Thumb Code     6  at32f435_437_qspi.o(i.qspi_byte_read)
+    qspi_byte_write                          0x000015b1   Thumb Code     6  at32f435_437_qspi.o(i.qspi_byte_write)
+    qspi_clk_division_set                    0x000015b7   Thumb Code    10  at32f435_437_qspi.o(i.qspi_clk_division_set)
+    qspi_cmd_init                            0x000015c1   Thumb Code    66  flashprg.o(i.qspi_cmd_init)
+    qspi_cmd_operation_kick                  0x00001609   Thumb Code    68  at32f435_437_qspi.o(i.qspi_cmd_operation_kick)
+    qspi_dma_enable                          0x0000164d   Thumb Code    10  at32f435_437_qspi.o(i.qspi_dma_enable)
+    qspi_dma_rx_threshold_set                0x00001657   Thumb Code    10  at32f435_437_qspi.o(i.qspi_dma_rx_threshold_set)
+    qspi_dma_tx_threshold_set                0x00001661   Thumb Code    10  at32f435_437_qspi.o(i.qspi_dma_tx_threshold_set)
+    qspi_encryption_enable                   0x0000166b   Thumb Code    10  at32f435_437_qspi.o(i.qspi_encryption_enable)
+    qspi_flag_clear                          0x00001675   Thumb Code     6  at32f435_437_qspi.o(i.qspi_flag_clear)
+    qspi_flag_get                            0x0000167b   Thumb Code    36  at32f435_437_qspi.o(i.qspi_flag_get)
+    qspi_gpio_init                           0x000016a1   Thumb Code   264  flashprg.o(i.qspi_gpio_init)
+    qspi_half_word_read                      0x000017c1   Thumb Code     6  at32f435_437_qspi.o(i.qspi_half_word_read)
+    qspi_half_word_write                     0x000017c7   Thumb Code     6  at32f435_437_qspi.o(i.qspi_half_word_write)
+    qspi_interrupt_enable                    0x000017cd   Thumb Code    10  at32f435_437_qspi.o(i.qspi_interrupt_enable)
+    qspi_sck_mode_set                        0x000017d7   Thumb Code    10  at32f435_437_qspi.o(i.qspi_sck_mode_set)
+    qspi_word_read                           0x000017e1   Thumb Code     6  at32f435_437_qspi.o(i.qspi_word_read)
+    qspi_word_write                          0x000017e7   Thumb Code     6  at32f435_437_qspi.o(i.qspi_word_write)
+    qspi_xip_cache_bypass_set                0x000017ed   Thumb Code    10  at32f435_437_qspi.o(i.qspi_xip_cache_bypass_set)
+    qspi_xip_enable                          0x000017f7   Thumb Code    56  at32f435_437_qspi.o(i.qspi_xip_enable)
+    qspi_xip_init                            0x0000182f   Thumb Code    80  at32f435_437_qspi.o(i.qspi_xip_init)
+    system_core_clock_update                 0x00001881   Thumb Code   118  system_at32f435_437.o(i.system_core_clock_update)
+    uninit_clk                               0x0000190d   Thumb Code    32  flashprg.o(i.uninit_clk)
+    system_core_clock                        0x00001980   Data           4  system_at32f435_437.o(.data)
+    FlashDevice                              0x00001984   Data        4256  flashdev.o(.constdata)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image entry point : Not specified.
+
+  Load Region PRG (Base: 0x00000000, Size: 0x00001984, Max: 0xffffffff, PI)
+
+    Execution Region PrgCode (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x0000197c, Max: 0xffffffff, PI)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x00000004   Code   RO            1    .rev16_text         flashprg.o
+    0x00000004   0x00000004   0x00000004   Code   RO          189    .rev16_text         at32f435_437_crm.o
+    0x00000008   0x00000008   0x00000004   Code   RO          415    .rev16_text         at32f435_437_flash.o
+    0x0000000c   0x0000000c   0x00000004   Code   RO          683    .rev16_text         at32f435_437_gpio.o
+    0x00000010   0x00000010   0x00000004   Code   RO          785    .rev16_text         at32f435_437_pwc.o
+    0x00000014   0x00000014   0x00000004   Code   RO          869    .rev16_text         at32f435_437_qspi.o
+    0x00000018   0x00000018   0x00000004   Code   RO         1007    .rev16_text         system_at32f435_437.o
+    0x0000001c   0x0000001c   0x00000004   Code   RO            2    .revsh_text         flashprg.o
+    0x00000020   0x00000020   0x00000004   Code   RO          190    .revsh_text         at32f435_437_crm.o
+    0x00000024   0x00000024   0x00000004   Code   RO          416    .revsh_text         at32f435_437_flash.o
+    0x00000028   0x00000028   0x00000004   Code   RO          684    .revsh_text         at32f435_437_gpio.o
+    0x0000002c   0x0000002c   0x00000004   Code   RO          786    .revsh_text         at32f435_437_pwc.o
+    0x00000030   0x00000030   0x00000004   Code   RO          870    .revsh_text         at32f435_437_qspi.o
+    0x00000034   0x00000034   0x00000004   Code   RO         1008    .revsh_text         system_at32f435_437.o
+    0x00000038   0x00000038   0x00000006   Code   RO            3    .rrx_text           flashprg.o
+    0x0000003e   0x0000003e   0x00000002   PAD
+    0x00000040   0x00000040   0x00000006   Code   RO          191    .rrx_text           at32f435_437_crm.o
+    0x00000046   0x00000046   0x00000002   PAD
+    0x00000048   0x00000048   0x00000006   Code   RO          417    .rrx_text           at32f435_437_flash.o
+    0x0000004e   0x0000004e   0x00000002   PAD
+    0x00000050   0x00000050   0x00000006   Code   RO          685    .rrx_text           at32f435_437_gpio.o
+    0x00000056   0x00000056   0x00000002   PAD
+    0x00000058   0x00000058   0x00000006   Code   RO          787    .rrx_text           at32f435_437_pwc.o
+    0x0000005e   0x0000005e   0x00000002   PAD
+    0x00000060   0x00000060   0x00000006   Code   RO          871    .rrx_text           at32f435_437_qspi.o
+    0x00000066   0x00000066   0x00000002   PAD
+    0x00000068   0x00000068   0x00000006   Code   RO         1009    .rrx_text           system_at32f435_437.o
+    0x0000006e   0x0000006e   0x000000ee   Code   RO         1046    .text               c_we.l(lludivv7m.o)
+    0x0000015c   0x0000015c   0x0000001c   Code   RO            4    i.EraseChip         flashprg.o
+    0x00000178   0x00000178   0x00000022   Code   RO            5    i.EraseSector       flashprg.o
+    0x0000019a   0x0000019a   0x00000016   Code   RO            6    i.Init              flashprg.o
+    0x000001b0   0x000001b0   0x00000060   Code   RO            7    i.ProgramPage       flashprg.o
+    0x00000210   0x00000210   0x0000006c   Code   RO         1010    i.SystemInit        system_at32f435_437.o
+    0x0000027c   0x0000027c   0x0000000e   Code   RO            8    i.UnInit            flashprg.o
+    0x0000028a   0x0000028a   0x00000002   PAD
+    0x0000028c   0x0000028c   0x00000010   Code   RO          192    i.crm_ahb_div_set   at32f435_437_crm.o
+    0x0000029c   0x0000029c   0x00000010   Code   RO          193    i.crm_apb1_div_set  at32f435_437_crm.o
+    0x000002ac   0x000002ac   0x00000010   Code   RO          194    i.crm_apb2_div_set  at32f435_437_crm.o
+    0x000002bc   0x000002bc   0x0000001c   Code   RO          195    i.crm_auto_step_mode_enable  at32f435_437_crm.o
+    0x000002d8   0x000002d8   0x00000010   Code   RO          196    i.crm_battery_powered_domain_reset  at32f435_437_crm.o
+    0x000002e8   0x000002e8   0x00000030   Code   RO          197    i.crm_clkout_div_set  at32f435_437_crm.o
+    0x00000318   0x00000318   0x00000010   Code   RO          198    i.crm_clkout_to_tmr10_enable  at32f435_437_crm.o
+    0x00000328   0x00000328   0x00000010   Code   RO          199    i.crm_clock_failure_detection_enable  at32f435_437_crm.o
+    0x00000338   0x00000338   0x00000010   Code   RO          200    i.crm_clock_out1_set  at32f435_437_crm.o
+    0x00000348   0x00000348   0x0000002c   Code   RO          201    i.crm_clock_out2_set  at32f435_437_crm.o
+    0x00000374   0x00000374   0x0000003c   Code   RO          202    i.crm_clock_source_enable  at32f435_437_crm.o
+    0x000003b0   0x000003b0   0x000000a8   Code   RO          203    i.crm_clocks_freq_get  at32f435_437_crm.o
+    0x00000458   0x00000458   0x00000010   Code   RO          204    i.crm_emac_output_pulse_set  at32f435_437_crm.o
+    0x00000468   0x00000468   0x00000010   Code   RO          205    i.crm_ertc_clock_enable  at32f435_437_crm.o
+    0x00000478   0x00000478   0x00000020   Code   RO          206    i.crm_ertc_clock_select  at32f435_437_crm.o
+    0x00000498   0x00000498   0x00000074   Code   RO          207    i.crm_flag_clear    at32f435_437_crm.o
+    0x0000050c   0x0000050c   0x00000024   Code   RO          208    i.crm_flag_get      at32f435_437_crm.o
+    0x00000530   0x00000530   0x00000010   Code   RO          209    i.crm_hext_bypass   at32f435_437_crm.o
+    0x00000540   0x00000540   0x00000028   Code   RO          210    i.crm_hext_stable_wait  at32f435_437_crm.o
+    0x00000568   0x00000568   0x00000028   Code   RO          211    i.crm_hick_clock_calibration_set  at32f435_437_crm.o
+    0x00000590   0x00000590   0x00000010   Code   RO          212    i.crm_hick_clock_trimming_set  at32f435_437_crm.o
+    0x000005a0   0x000005a0   0x00000010   Code   RO          213    i.crm_hick_divider_select  at32f435_437_crm.o
+    0x000005b0   0x000005b0   0x0000001c   Code   RO          214    i.crm_hick_sclk_frequency_select  at32f435_437_crm.o
+    0x000005cc   0x000005cc   0x00000018   Code   RO          215    i.crm_interrupt_enable  at32f435_437_crm.o
+    0x000005e4   0x000005e4   0x00000010   Code   RO          216    i.crm_lext_bypass   at32f435_437_crm.o
+    0x000005f4   0x000005f4   0x00000028   Code   RO          217    i.crm_periph_clock_enable  at32f435_437_crm.o
+    0x0000061c   0x0000061c   0x00000028   Code   RO          218    i.crm_periph_lowpower_mode_enable  at32f435_437_crm.o
+    0x00000644   0x00000644   0x00000028   Code   RO          219    i.crm_periph_reset  at32f435_437_crm.o
+    0x0000066c   0x0000066c   0x00000038   Code   RO          220    i.crm_pll_config    at32f435_437_crm.o
+    0x000006a4   0x000006a4   0x000000b0   Code   RO          221    i.crm_pll_parameter_calculate  at32f435_437_crm.o
+    0x00000754   0x00000754   0x00000058   Code   RO          222    i.crm_reset         at32f435_437_crm.o
+    0x000007ac   0x000007ac   0x00000010   Code   RO          223    i.crm_sysclk_switch  at32f435_437_crm.o
+    0x000007bc   0x000007bc   0x00000010   Code   RO          224    i.crm_sysclk_switch_status_get  at32f435_437_crm.o
+    0x000007cc   0x000007cc   0x00000010   Code   RO          225    i.crm_usb_clock_div_set  at32f435_437_crm.o
+    0x000007dc   0x000007dc   0x0000001c   Code   RO          226    i.crm_usb_clock_source_select  at32f435_437_crm.o
+    0x000007f8   0x000007f8   0x00000028   Code   RO            9    i.custom_qspi_busy_check  flashprg.o
+    0x00000820   0x00000820   0x00000028   Code   RO           10    i.custom_qspi_chip_erase  flashprg.o
+    0x00000848   0x00000848   0x00000028   Code   RO           11    i.custom_qspi_rst   flashprg.o
+    0x00000870   0x00000870   0x00000028   Code   RO           12    i.custom_qspi_rsten  flashprg.o
+    0x00000898   0x00000898   0x00000028   Code   RO           13    i.custom_qspi_rstqpi  flashprg.o
+    0x000008c0   0x000008c0   0x0000002c   Code   RO           14    i.custom_qspi_sector_erase  flashprg.o
+    0x000008ec   0x000008ec   0x00000028   Code   RO           15    i.custom_qspi_write_enable  flashprg.o
+    0x00000914   0x00000914   0x00000050   Code   RO           16    i.custom_qspi_xip_enable  flashprg.o
+    0x00000964   0x00000964   0x00000068   Code   RO           17    i.custom_xip_enable_config  flashprg.o
+    0x000009cc   0x000009cc   0x00000028   Code   RO          418    i.flash_bank1_erase  at32f435_437_flash.o
+    0x000009f4   0x000009f4   0x00000010   Code   RO          419    i.flash_bank1_lock  at32f435_437_flash.o
+    0x00000a04   0x00000a04   0x00000028   Code   RO          420    i.flash_bank1_operation_status_get  at32f435_437_flash.o
+    0x00000a2c   0x00000a2c   0x00000020   Code   RO          421    i.flash_bank1_operation_wait_for  at32f435_437_flash.o
+    0x00000a4c   0x00000a4c   0x00000018   Code   RO          422    i.flash_bank1_unlock  at32f435_437_flash.o
+    0x00000a64   0x00000a64   0x00000028   Code   RO          423    i.flash_bank2_erase  at32f435_437_flash.o
+    0x00000a8c   0x00000a8c   0x00000010   Code   RO          424    i.flash_bank2_lock  at32f435_437_flash.o
+    0x00000a9c   0x00000a9c   0x00000028   Code   RO          425    i.flash_bank2_operation_status_get  at32f435_437_flash.o
+    0x00000ac4   0x00000ac4   0x00000020   Code   RO          426    i.flash_bank2_operation_wait_for  at32f435_437_flash.o
+    0x00000ae4   0x00000ae4   0x00000018   Code   RO          427    i.flash_bank2_unlock  at32f435_437_flash.o
+    0x00000afc   0x00000afc   0x00000068   Code   RO          428    i.flash_block_erase  at32f435_437_flash.o
+    0x00000b64   0x00000b64   0x00000058   Code   RO          429    i.flash_byte_program  at32f435_437_flash.o
+    0x00000bbc   0x00000bbc   0x00000010   Code   RO          430    i.flash_continue_read_enable  at32f435_437_flash.o
+    0x00000bcc   0x00000bcc   0x00000030   Code   RO          431    i.flash_crc_calibrate  at32f435_437_flash.o
+    0x00000bfc   0x00000bfc   0x00000044   Code   RO          432    i.flash_eopb0_config  at32f435_437_flash.o
+    0x00000c40   0x00000c40   0x000000d0   Code   RO          433    i.flash_epp_set     at32f435_437_flash.o
+    0x00000d10   0x00000d10   0x00000014   Code   RO          434    i.flash_epp_status_get  at32f435_437_flash.o
+    0x00000d24   0x00000d24   0x00000078   Code   RO          435    i.flash_fap_enable  at32f435_437_flash.o
+    0x00000d9c   0x00000d9c   0x00000010   Code   RO          436    i.flash_fap_status_get  at32f435_437_flash.o
+    0x00000dac   0x00000dac   0x00000020   Code   RO          437    i.flash_flag_clear  at32f435_437_flash.o
+    0x00000dcc   0x00000dcc   0x00000038   Code   RO          438    i.flash_flag_get    at32f435_437_flash.o
+    0x00000e04   0x00000e04   0x00000058   Code   RO          439    i.flash_halfword_program  at32f435_437_flash.o
+    0x00000e5c   0x00000e5c   0x00000050   Code   RO          440    i.flash_internal_all_erase  at32f435_437_flash.o
+    0x00000eac   0x00000eac   0x00000040   Code   RO          441    i.flash_interrupt_enable  at32f435_437_flash.o
+    0x00000eec   0x00000eec   0x0000001c   Code   RO          442    i.flash_lock        at32f435_437_flash.o
+    0x00000f08   0x00000f08   0x00000010   Code   RO          443    i.flash_nzw_boost_enable  at32f435_437_flash.o
+    0x00000f18   0x00000f18   0x00000028   Code   RO          444    i.flash_operation_status_get  at32f435_437_flash.o
+    0x00000f40   0x00000f40   0x00000020   Code   RO          445    i.flash_operation_wait_for  at32f435_437_flash.o
+    0x00000f60   0x00000f60   0x00000068   Code   RO          446    i.flash_sector_erase  at32f435_437_flash.o
+    0x00000fc8   0x00000fc8   0x00000028   Code   RO          447    i.flash_slib_disable  at32f435_437_flash.o
+    0x00000ff0   0x00000ff0   0x00000074   Code   RO          448    i.flash_slib_enable  at32f435_437_flash.o
+    0x00001064   0x00001064   0x0000000c   Code   RO          449    i.flash_slib_end_sector_get  at32f435_437_flash.o
+    0x00001070   0x00001070   0x0000000c   Code   RO          450    i.flash_slib_inststart_sector_get  at32f435_437_flash.o
+    0x0000107c   0x0000107c   0x00000010   Code   RO          451    i.flash_slib_remaining_count_get  at32f435_437_flash.o
+    0x0000108c   0x0000108c   0x0000000c   Code   RO          452    i.flash_slib_start_sector_get  at32f435_437_flash.o
+    0x00001098   0x00001098   0x00000014   Code   RO          453    i.flash_slib_state_get  at32f435_437_flash.o
+    0x000010ac   0x000010ac   0x00000044   Code   RO          454    i.flash_ssb_set     at32f435_437_flash.o
+    0x000010f0   0x000010f0   0x00000010   Code   RO          455    i.flash_ssb_status_get  at32f435_437_flash.o
+    0x00001100   0x00001100   0x00000020   Code   RO          456    i.flash_unlock      at32f435_437_flash.o
+    0x00001120   0x00001120   0x00000078   Code   RO          457    i.flash_user_system_data_erase  at32f435_437_flash.o
+    0x00001198   0x00001198   0x00000050   Code   RO          458    i.flash_user_system_data_program  at32f435_437_flash.o
+    0x000011e8   0x000011e8   0x00000058   Code   RO          459    i.flash_word_program  at32f435_437_flash.o
+    0x00001240   0x00001240   0x00000004   Code   RO          686    i.gpio_bits_reset   at32f435_437_gpio.o
+    0x00001244   0x00001244   0x00000004   Code   RO          687    i.gpio_bits_set     at32f435_437_gpio.o
+    0x00001248   0x00001248   0x0000000a   Code   RO          688    i.gpio_bits_write   at32f435_437_gpio.o
+    0x00001252   0x00001252   0x00000014   Code   RO          689    i.gpio_default_para_init  at32f435_437_gpio.o
+    0x00001266   0x00001266   0x00000064   Code   RO          690    i.gpio_init         at32f435_437_gpio.o
+    0x000012ca   0x000012ca   0x0000000e   Code   RO          691    i.gpio_input_data_bit_read  at32f435_437_gpio.o
+    0x000012d8   0x000012d8   0x00000006   Code   RO          692    i.gpio_input_data_read  at32f435_437_gpio.o
+    0x000012de   0x000012de   0x0000000e   Code   RO          693    i.gpio_output_data_bit_read  at32f435_437_gpio.o
+    0x000012ec   0x000012ec   0x00000006   Code   RO          694    i.gpio_output_data_read  at32f435_437_gpio.o
+    0x000012f2   0x000012f2   0x00000030   Code   RO          695    i.gpio_pin_mux_config  at32f435_437_gpio.o
+    0x00001322   0x00001322   0x00000010   Code   RO          696    i.gpio_pin_wp_config  at32f435_437_gpio.o
+    0x00001332   0x00001332   0x00000010   Code   RO          697    i.gpio_pins_huge_driven_config  at32f435_437_gpio.o
+    0x00001342   0x00001342   0x00000004   Code   RO          698    i.gpio_port_write   at32f435_437_gpio.o
+    0x00001346   0x00001346   0x00000002   PAD
+    0x00001348   0x00001348   0x000000a4   Code   RO          699    i.gpio_reset        at32f435_437_gpio.o
+    0x000013ec   0x000013ec   0x00000094   Code   RO           18    i.init_clk          flashprg.o
+    0x00001480   0x00001480   0x00000010   Code   RO          788    i.pwc_battery_powered_domain_access  at32f435_437_pwc.o
+    0x00001490   0x00001490   0x0000002c   Code   RO          789    i.pwc_deep_sleep_mode_enter  at32f435_437_pwc.o
+    0x000014bc   0x000014bc   0x00000020   Code   RO          790    i.pwc_flag_clear    at32f435_437_pwc.o
+    0x000014dc   0x000014dc   0x00000014   Code   RO          791    i.pwc_flag_get      at32f435_437_pwc.o
+    0x000014f0   0x000014f0   0x00000010   Code   RO          792    i.pwc_power_voltage_monitor_enable  at32f435_437_pwc.o
+    0x00001500   0x00001500   0x00000010   Code   RO          793    i.pwc_pvm_level_select  at32f435_437_pwc.o
+    0x00001510   0x00001510   0x0000001c   Code   RO          794    i.pwc_reset         at32f435_437_pwc.o
+    0x0000152c   0x0000152c   0x00000024   Code   RO          795    i.pwc_sleep_mode_enter  at32f435_437_pwc.o
+    0x00001550   0x00001550   0x00000028   Code   RO          796    i.pwc_standby_mode_enter  at32f435_437_pwc.o
+    0x00001578   0x00001578   0x00000010   Code   RO          797    i.pwc_voltage_regulate_set  at32f435_437_pwc.o
+    0x00001588   0x00001588   0x00000018   Code   RO          798    i.pwc_wakeup_pin_enable  at32f435_437_pwc.o
+    0x000015a0   0x000015a0   0x0000000a   Code   RO          872    i.qspi_busy_config  at32f435_437_qspi.o
+    0x000015aa   0x000015aa   0x00000006   Code   RO          873    i.qspi_byte_read    at32f435_437_qspi.o
+    0x000015b0   0x000015b0   0x00000006   Code   RO          874    i.qspi_byte_write   at32f435_437_qspi.o
+    0x000015b6   0x000015b6   0x0000000a   Code   RO          875    i.qspi_clk_division_set  at32f435_437_qspi.o
+    0x000015c0   0x000015c0   0x00000048   Code   RO           19    i.qspi_cmd_init     flashprg.o
+    0x00001608   0x00001608   0x00000044   Code   RO          876    i.qspi_cmd_operation_kick  at32f435_437_qspi.o
+    0x0000164c   0x0000164c   0x0000000a   Code   RO          877    i.qspi_dma_enable   at32f435_437_qspi.o
+    0x00001656   0x00001656   0x0000000a   Code   RO          878    i.qspi_dma_rx_threshold_set  at32f435_437_qspi.o
+    0x00001660   0x00001660   0x0000000a   Code   RO          879    i.qspi_dma_tx_threshold_set  at32f435_437_qspi.o
+    0x0000166a   0x0000166a   0x0000000a   Code   RO          880    i.qspi_encryption_enable  at32f435_437_qspi.o
+    0x00001674   0x00001674   0x00000006   Code   RO          881    i.qspi_flag_clear   at32f435_437_qspi.o
+    0x0000167a   0x0000167a   0x00000024   Code   RO          882    i.qspi_flag_get     at32f435_437_qspi.o
+    0x0000169e   0x0000169e   0x00000002   PAD
+    0x000016a0   0x000016a0   0x00000120   Code   RO           20    i.qspi_gpio_init    flashprg.o
+    0x000017c0   0x000017c0   0x00000006   Code   RO          883    i.qspi_half_word_read  at32f435_437_qspi.o
+    0x000017c6   0x000017c6   0x00000006   Code   RO          884    i.qspi_half_word_write  at32f435_437_qspi.o
+    0x000017cc   0x000017cc   0x0000000a   Code   RO          885    i.qspi_interrupt_enable  at32f435_437_qspi.o
+    0x000017d6   0x000017d6   0x0000000a   Code   RO          886    i.qspi_sck_mode_set  at32f435_437_qspi.o
+    0x000017e0   0x000017e0   0x00000006   Code   RO          887    i.qspi_word_read    at32f435_437_qspi.o
+    0x000017e6   0x000017e6   0x00000006   Code   RO          888    i.qspi_word_write   at32f435_437_qspi.o
+    0x000017ec   0x000017ec   0x0000000a   Code   RO          889    i.qspi_xip_cache_bypass_set  at32f435_437_qspi.o
+    0x000017f6   0x000017f6   0x00000038   Code   RO          890    i.qspi_xip_enable   at32f435_437_qspi.o
+    0x0000182e   0x0000182e   0x00000050   Code   RO          891    i.qspi_xip_init     at32f435_437_qspi.o
+    0x0000187e   0x0000187e   0x00000002   PAD
+    0x00001880   0x00001880   0x0000008c   Code   RO         1011    i.system_core_clock_update  system_at32f435_437.o
+    0x0000190c   0x0000190c   0x00000028   Code   RO           21    i.uninit_clk        flashprg.o
+    0x00001934   0x00001934   0x00000026   Data   RO          227    .constdata          at32f435_437_crm.o
+    0x0000195a   0x0000195a   0x00000002   PAD
+    0x0000195c   0x0000195c   0x00000008   Data   RO          460    .constdata          at32f435_437_flash.o
+    0x00001964   0x00001964   0x00000016   Data   RO         1012    .constdata          system_at32f435_437.o
+
+
+    Execution Region PrgData (Exec base: 0x0000197c, Load base: 0x0000197c, Size: 0x00000008, Max: 0xffffffff, PI)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x0000197c   0x0000197c   0x00000004   Data   RW         1093    PDT$$ptr            anon$$obj.o
+    0x00001980   0x00001980   0x00000004   Data   RW         1013    .data               system_at32f435_437.o
+
+
+
+  Load Region DSCR (Base: 0x00001984, Size: 0x000010a0, Max: 0xffffffff, PI)
+
+    Execution Region DevDscr (Exec base: 0x00001984, Load base: 0x00001984, Size: 0x000010a0, Max: 0xffffffff, PI)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00001984   0x00001984   0x000010a0   Data   RO          180    .constdata          flashdev.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      1402        200         38          0          0      27145   at32f435_437_crm.o
+      2178        284          8          0          0      32992   at32f435_437_flash.o
+       440         36          0          0          0      12216   at32f435_437_gpio.o
+       302         54          0          0          0       8977   at32f435_437_pwc.o
+       386          0          0          0          0      15963   at32f435_437_qspi.o
+         0          0       4256          0          0        630   flashdev.o
+      1224        136          0          0          0      68516   flashprg.o
+       262         38         22          4          0       4356   system_at32f435_437.o
+
+    ----------------------------------------------------------------------
+      6214        748       4328          8          0     170795   Object Totals
+         0          0          0          4          0          0   (incl. Generated)
+        20          0          4          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+       238          0          0          0          0         96   lludivv7m.o
+
+    ----------------------------------------------------------------------
+       238          0          0          0          0         96   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       238          0          0          0          0         96   c_we.l
+
+    ----------------------------------------------------------------------
+       238          0          0          0          0         96   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      6452        748       4328          8          0     155371   Grand Totals
+      6452        748       4328          8          0     155371   ELF Image Totals
+      6452        748       4328          8          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                10780 (  10.53kB)
+    Total RW  Size (RW Data + ZI Data)                 8 (   0.01kB)
+    Total ROM Size (Code + RO Data + RW Data)      10788 (  10.54kB)
+
+==============================================================================
+

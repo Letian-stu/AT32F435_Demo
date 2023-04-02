@@ -1,0 +1,16 @@
+.\objects\croutine.o: D:/A_Sofoware/Stu_Soft/Keil/pack/ARM/CMSIS-FreeRTOS/10.4.3/Source/croutine.c
+.\objects\croutine.o: ./RTE/LVGL/lv_conf_cmsis.h
+.\objects\croutine.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdint.h
+.\objects\croutine.o: .\RTE\_Project\RTE_Components.h
+.\objects\croutine.o: .\RTE\_Project\Pre_Include_Global.h
+.\objects\croutine.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\FreeRTOS.h
+.\objects\croutine.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stddef.h
+.\objects\croutine.o: .\RTE\RTOS\FreeRTOSConfig.h
+.\objects\croutine.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\projdefs.h
+.\objects\croutine.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\portable.h
+.\objects\croutine.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\deprecated_definitions.h
+.\objects\croutine.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\portable\RVDS\ARM_CM4F\portmacro.h
+.\objects\croutine.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\mpu_wrappers.h
+.\objects\croutine.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\task.h
+.\objects\croutine.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\list.h
+.\objects\croutine.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\croutine.h

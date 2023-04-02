@@ -1,0 +1,15 @@
+.\objects\list.o: D:/A_Sofoware/Stu_Soft/Keil/pack/ARM/CMSIS-FreeRTOS/10.4.3/Source/list.c
+.\objects\list.o: ./RTE/LVGL/lv_conf_cmsis.h
+.\objects\list.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdint.h
+.\objects\list.o: .\RTE\_Project\RTE_Components.h
+.\objects\list.o: .\RTE\_Project\Pre_Include_Global.h
+.\objects\list.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdlib.h
+.\objects\list.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\FreeRTOS.h
+.\objects\list.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stddef.h
+.\objects\list.o: .\RTE\RTOS\FreeRTOSConfig.h
+.\objects\list.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\projdefs.h
+.\objects\list.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\portable.h
+.\objects\list.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\deprecated_definitions.h
+.\objects\list.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\portable\RVDS\ARM_CM4F\portmacro.h
+.\objects\list.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\mpu_wrappers.h
+.\objects\list.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\list.h

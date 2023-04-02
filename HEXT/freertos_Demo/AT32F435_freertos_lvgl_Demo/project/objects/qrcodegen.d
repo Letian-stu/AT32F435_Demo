@@ -1,0 +1,9 @@
+.\objects\qrcodegen.o: ..\lvgl\src\extra\libs\qrcode\qrcodegen.c
+.\objects\qrcodegen.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\assert.h
+.\objects\qrcodegen.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\limits.h
+.\objects\qrcodegen.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdlib.h
+.\objects\qrcodegen.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\string.h
+.\objects\qrcodegen.o: ..\lvgl\src\extra\libs\qrcode\qrcodegen.h
+.\objects\qrcodegen.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdbool.h
+.\objects\qrcodegen.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stddef.h
+.\objects\qrcodegen.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdint.h

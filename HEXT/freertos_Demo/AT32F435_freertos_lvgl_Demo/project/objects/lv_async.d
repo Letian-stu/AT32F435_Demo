@@ -1,0 +1,13 @@
+.\objects\lv_async.o: ..\lvgl\src\misc\lv_async.c
+.\objects\lv_async.o: ..\lvgl\src\misc\lv_async.h
+.\objects\lv_async.o: ..\lvgl\src\misc\lv_types.h
+.\objects\lv_async.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdint.h
+.\objects\lv_async.o: ..\lvgl\src\misc\lv_mem.h
+.\objects\lv_async.o: ..\lvgl\src\misc\../lv_conf_internal.h
+.\objects\lv_async.o: ..\lvgl\src\misc\../lv_conf_kconfig.h
+.\objects\lv_async.o: ..\lvgl\demos\benchmark\../../lv_conf.h
+.\objects\lv_async.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stddef.h
+.\objects\lv_async.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\string.h
+.\objects\lv_async.o: ..\lvgl\src\misc\lv_timer.h
+.\objects\lv_async.o: ..\lvgl\src\misc\../hal/lv_hal_tick.h
+.\objects\lv_async.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdbool.h
