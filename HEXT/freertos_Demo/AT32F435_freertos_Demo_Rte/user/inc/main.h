@@ -17,8 +17,6 @@
 #include "message_buffer.h"
 #include "semphr.h"
 
-#include "lv_port_disp_template.h"
-#include "../lv_demos.h"
-
+volatile uint32_t debug_timerTick;//任务运行时间统计使用  
 
 #endif

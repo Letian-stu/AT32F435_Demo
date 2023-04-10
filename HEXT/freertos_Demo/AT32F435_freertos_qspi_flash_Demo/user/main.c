@@ -1,8 +1,5 @@
 #include "main.h"
 
-uint8_t write_buf[1024] = "hello world";
-uint8_t read_buf[1024];
-
 TaskHandle_t App_main_Handler;
 
 void App_main(void *pvParameters)
@@ -18,6 +15,7 @@ int main(void)
 {
   system_clock_config();
   uart_print_init(115200);
+	printf("Init Success \r\n");
   /* 进入临界区 */
   taskENTER_CRITICAL(); 
 

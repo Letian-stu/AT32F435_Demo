@@ -19,20 +19,20 @@ int main(void)
   system_clock_config();
   uart_print_init(115200);
 	
-//  /* initialize qspi flash */
-//  qspi_flash_init();
+  /* initialize qspi flash */
+  qspi_flash_init();
 
-//  /* erase sector 0 */
-//  qspi_flash_erase(0);
+  /* erase sector 0 */
+  qspi_flash_erase(0);
 
-//	printf("strlen:%d\r\n",strlen((char *)write_buf));
-//  /* write data to quad spi flash */
-//  qspi_flash_data_write(0xff, write_buf, strlen((char *)write_buf) );
-//  printf("write: %s\r\n",write_buf);
+	printf("strlen:%d\r\n",strlen((char *)write_buf));
+  /* write data to quad spi flash */
+  qspi_flash_data_write(0xff, write_buf, strlen((char *)write_buf) );
+  printf("write: %s\r\n",write_buf);
 
-//  /* read data from quad spi flash */
-//  qspi_flash_data_read(0xff, read_buf, strlen((char *)write_buf) );
-//	printf("read: %s\r\n",read_buf);
+  /* read data from quad spi flash */
+  qspi_flash_data_read(0xff, read_buf, strlen((char *)write_buf) );
+	printf("read: %s\r\n",read_buf);
   /* 进入临界区 */
   taskENTER_CRITICAL(); 
 

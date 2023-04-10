@@ -1,7 +1,6 @@
 #include "main.h"
 
 TaskHandle_t App_main_Handler;
-TaskHandle_t Lvgl_tick_Handler;
 
 void App_main(void *pvParameters)
 {
@@ -12,14 +11,7 @@ void App_main(void *pvParameters)
 	}
 }
 
-void Lvgl_tick(void *pvParameters)
-{
-	while(1)
-	{
-		lv_timer_handler();
-		vTaskDelay(5);
-	}
-}
+
 
 int main(void)
 {
@@ -37,12 +29,6 @@ int main(void)
   /* 进入临界区 */
   taskENTER_CRITICAL(); 
 
-	lv_init();
-	lv_port_disp_init();
-	
-#if LV_USE_DEMO_BENCHMARK
-  lv_demo_benchmark();
-#endif
 	
   xTaskCreate((TaskFunction_t )App_main,     
               (const char*    )"App_main",   
@@ -50,13 +36,7 @@ int main(void)
               (void*          )NULL,
               (UBaseType_t    )1,
               (TaskHandle_t*  )&App_main_Handler); 	
-							
-  xTaskCreate((TaskFunction_t )Lvgl_tick,     
-              (const char*    )"Lvgl_tick",   
-              (uint16_t       )256, 
-              (void*          )NULL,
-              (UBaseType_t    )1,
-              (TaskHandle_t*  )&Lvgl_tick_Handler); 									
+															
   /* 退出临界区 */            
   taskEXIT_CRITICAL();  
   /* 开启任务调度器 */              

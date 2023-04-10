@@ -550,37 +550,37 @@ Memory Map of the image
 
     0x00000000   0x00000000   0x00000004   Code   RO            1    .rev16_text         flashprg.o
     0x00000004   0x00000004   0x00000004   Code   RO          189    .rev16_text         at32f435_437_crm.o
-    0x00000008   0x00000008   0x00000004   Code   RO          415    .rev16_text         at32f435_437_flash.o
-    0x0000000c   0x0000000c   0x00000004   Code   RO          683    .rev16_text         at32f435_437_gpio.o
-    0x00000010   0x00000010   0x00000004   Code   RO          785    .rev16_text         at32f435_437_pwc.o
-    0x00000014   0x00000014   0x00000004   Code   RO          869    .rev16_text         at32f435_437_qspi.o
-    0x00000018   0x00000018   0x00000004   Code   RO         1007    .rev16_text         system_at32f435_437.o
+    0x00000008   0x00000008   0x00000004   Code   RO          459    .rev16_text         at32f435_437_flash.o
+    0x0000000c   0x0000000c   0x00000004   Code   RO          727    .rev16_text         at32f435_437_gpio.o
+    0x00000010   0x00000010   0x00000004   Code   RO          829    .rev16_text         at32f435_437_pwc.o
+    0x00000014   0x00000014   0x00000004   Code   RO          913    .rev16_text         at32f435_437_qspi.o
+    0x00000018   0x00000018   0x00000004   Code   RO         1051    .rev16_text         system_at32f435_437.o
     0x0000001c   0x0000001c   0x00000004   Code   RO            2    .revsh_text         flashprg.o
     0x00000020   0x00000020   0x00000004   Code   RO          190    .revsh_text         at32f435_437_crm.o
-    0x00000024   0x00000024   0x00000004   Code   RO          416    .revsh_text         at32f435_437_flash.o
-    0x00000028   0x00000028   0x00000004   Code   RO          684    .revsh_text         at32f435_437_gpio.o
-    0x0000002c   0x0000002c   0x00000004   Code   RO          786    .revsh_text         at32f435_437_pwc.o
-    0x00000030   0x00000030   0x00000004   Code   RO          870    .revsh_text         at32f435_437_qspi.o
-    0x00000034   0x00000034   0x00000004   Code   RO         1008    .revsh_text         system_at32f435_437.o
+    0x00000024   0x00000024   0x00000004   Code   RO          460    .revsh_text         at32f435_437_flash.o
+    0x00000028   0x00000028   0x00000004   Code   RO          728    .revsh_text         at32f435_437_gpio.o
+    0x0000002c   0x0000002c   0x00000004   Code   RO          830    .revsh_text         at32f435_437_pwc.o
+    0x00000030   0x00000030   0x00000004   Code   RO          914    .revsh_text         at32f435_437_qspi.o
+    0x00000034   0x00000034   0x00000004   Code   RO         1052    .revsh_text         system_at32f435_437.o
     0x00000038   0x00000038   0x00000006   Code   RO            3    .rrx_text           flashprg.o
     0x0000003e   0x0000003e   0x00000002   PAD
     0x00000040   0x00000040   0x00000006   Code   RO          191    .rrx_text           at32f435_437_crm.o
     0x00000046   0x00000046   0x00000002   PAD
-    0x00000048   0x00000048   0x00000006   Code   RO          417    .rrx_text           at32f435_437_flash.o
+    0x00000048   0x00000048   0x00000006   Code   RO          461    .rrx_text           at32f435_437_flash.o
     0x0000004e   0x0000004e   0x00000002   PAD
-    0x00000050   0x00000050   0x00000006   Code   RO          685    .rrx_text           at32f435_437_gpio.o
+    0x00000050   0x00000050   0x00000006   Code   RO          729    .rrx_text           at32f435_437_gpio.o
     0x00000056   0x00000056   0x00000002   PAD
-    0x00000058   0x00000058   0x00000006   Code   RO          787    .rrx_text           at32f435_437_pwc.o
+    0x00000058   0x00000058   0x00000006   Code   RO          831    .rrx_text           at32f435_437_pwc.o
     0x0000005e   0x0000005e   0x00000002   PAD
-    0x00000060   0x00000060   0x00000006   Code   RO          871    .rrx_text           at32f435_437_qspi.o
+    0x00000060   0x00000060   0x00000006   Code   RO          915    .rrx_text           at32f435_437_qspi.o
     0x00000066   0x00000066   0x00000002   PAD
-    0x00000068   0x00000068   0x00000006   Code   RO         1009    .rrx_text           system_at32f435_437.o
-    0x0000006e   0x0000006e   0x000000ee   Code   RO         1046    .text               c_we.l(lludivv7m.o)
+    0x00000068   0x00000068   0x00000006   Code   RO         1053    .rrx_text           system_at32f435_437.o
+    0x0000006e   0x0000006e   0x000000ee   Code   RO         1090    .text               c_we.l(lludivv7m.o)
     0x0000015c   0x0000015c   0x0000001c   Code   RO            4    i.EraseChip         flashprg.o
     0x00000178   0x00000178   0x00000022   Code   RO            5    i.EraseSector       flashprg.o
     0x0000019a   0x0000019a   0x00000016   Code   RO            6    i.Init              flashprg.o
     0x000001b0   0x000001b0   0x00000060   Code   RO            7    i.ProgramPage       flashprg.o
-    0x00000210   0x00000210   0x0000006c   Code   RO         1010    i.SystemInit        system_at32f435_437.o
+    0x00000210   0x00000210   0x0000006c   Code   RO         1054    i.SystemInit        system_at32f435_437.o
     0x0000027c   0x0000027c   0x0000000e   Code   RO            8    i.UnInit            flashprg.o
     0x0000028a   0x0000028a   0x00000002   PAD
     0x0000028c   0x0000028c   0x00000010   Code   RO          192    i.crm_ahb_div_set   at32f435_437_crm.o
@@ -627,113 +627,113 @@ Memory Map of the image
     0x000008ec   0x000008ec   0x00000028   Code   RO           15    i.custom_qspi_write_enable  flashprg.o
     0x00000914   0x00000914   0x00000050   Code   RO           16    i.custom_qspi_xip_enable  flashprg.o
     0x00000964   0x00000964   0x00000068   Code   RO           17    i.custom_xip_enable_config  flashprg.o
-    0x000009cc   0x000009cc   0x00000028   Code   RO          418    i.flash_bank1_erase  at32f435_437_flash.o
-    0x000009f4   0x000009f4   0x00000010   Code   RO          419    i.flash_bank1_lock  at32f435_437_flash.o
-    0x00000a04   0x00000a04   0x00000028   Code   RO          420    i.flash_bank1_operation_status_get  at32f435_437_flash.o
-    0x00000a2c   0x00000a2c   0x00000020   Code   RO          421    i.flash_bank1_operation_wait_for  at32f435_437_flash.o
-    0x00000a4c   0x00000a4c   0x00000018   Code   RO          422    i.flash_bank1_unlock  at32f435_437_flash.o
-    0x00000a64   0x00000a64   0x00000028   Code   RO          423    i.flash_bank2_erase  at32f435_437_flash.o
-    0x00000a8c   0x00000a8c   0x00000010   Code   RO          424    i.flash_bank2_lock  at32f435_437_flash.o
-    0x00000a9c   0x00000a9c   0x00000028   Code   RO          425    i.flash_bank2_operation_status_get  at32f435_437_flash.o
-    0x00000ac4   0x00000ac4   0x00000020   Code   RO          426    i.flash_bank2_operation_wait_for  at32f435_437_flash.o
-    0x00000ae4   0x00000ae4   0x00000018   Code   RO          427    i.flash_bank2_unlock  at32f435_437_flash.o
-    0x00000afc   0x00000afc   0x00000068   Code   RO          428    i.flash_block_erase  at32f435_437_flash.o
-    0x00000b64   0x00000b64   0x00000058   Code   RO          429    i.flash_byte_program  at32f435_437_flash.o
-    0x00000bbc   0x00000bbc   0x00000010   Code   RO          430    i.flash_continue_read_enable  at32f435_437_flash.o
-    0x00000bcc   0x00000bcc   0x00000030   Code   RO          431    i.flash_crc_calibrate  at32f435_437_flash.o
-    0x00000bfc   0x00000bfc   0x00000044   Code   RO          432    i.flash_eopb0_config  at32f435_437_flash.o
-    0x00000c40   0x00000c40   0x000000d0   Code   RO          433    i.flash_epp_set     at32f435_437_flash.o
-    0x00000d10   0x00000d10   0x00000014   Code   RO          434    i.flash_epp_status_get  at32f435_437_flash.o
-    0x00000d24   0x00000d24   0x00000078   Code   RO          435    i.flash_fap_enable  at32f435_437_flash.o
-    0x00000d9c   0x00000d9c   0x00000010   Code   RO          436    i.flash_fap_status_get  at32f435_437_flash.o
-    0x00000dac   0x00000dac   0x00000020   Code   RO          437    i.flash_flag_clear  at32f435_437_flash.o
-    0x00000dcc   0x00000dcc   0x00000038   Code   RO          438    i.flash_flag_get    at32f435_437_flash.o
-    0x00000e04   0x00000e04   0x00000058   Code   RO          439    i.flash_halfword_program  at32f435_437_flash.o
-    0x00000e5c   0x00000e5c   0x00000050   Code   RO          440    i.flash_internal_all_erase  at32f435_437_flash.o
-    0x00000eac   0x00000eac   0x00000040   Code   RO          441    i.flash_interrupt_enable  at32f435_437_flash.o
-    0x00000eec   0x00000eec   0x0000001c   Code   RO          442    i.flash_lock        at32f435_437_flash.o
-    0x00000f08   0x00000f08   0x00000010   Code   RO          443    i.flash_nzw_boost_enable  at32f435_437_flash.o
-    0x00000f18   0x00000f18   0x00000028   Code   RO          444    i.flash_operation_status_get  at32f435_437_flash.o
-    0x00000f40   0x00000f40   0x00000020   Code   RO          445    i.flash_operation_wait_for  at32f435_437_flash.o
-    0x00000f60   0x00000f60   0x00000068   Code   RO          446    i.flash_sector_erase  at32f435_437_flash.o
-    0x00000fc8   0x00000fc8   0x00000028   Code   RO          447    i.flash_slib_disable  at32f435_437_flash.o
-    0x00000ff0   0x00000ff0   0x00000074   Code   RO          448    i.flash_slib_enable  at32f435_437_flash.o
-    0x00001064   0x00001064   0x0000000c   Code   RO          449    i.flash_slib_end_sector_get  at32f435_437_flash.o
-    0x00001070   0x00001070   0x0000000c   Code   RO          450    i.flash_slib_inststart_sector_get  at32f435_437_flash.o
-    0x0000107c   0x0000107c   0x00000010   Code   RO          451    i.flash_slib_remaining_count_get  at32f435_437_flash.o
-    0x0000108c   0x0000108c   0x0000000c   Code   RO          452    i.flash_slib_start_sector_get  at32f435_437_flash.o
-    0x00001098   0x00001098   0x00000014   Code   RO          453    i.flash_slib_state_get  at32f435_437_flash.o
-    0x000010ac   0x000010ac   0x00000044   Code   RO          454    i.flash_ssb_set     at32f435_437_flash.o
-    0x000010f0   0x000010f0   0x00000010   Code   RO          455    i.flash_ssb_status_get  at32f435_437_flash.o
-    0x00001100   0x00001100   0x00000020   Code   RO          456    i.flash_unlock      at32f435_437_flash.o
-    0x00001120   0x00001120   0x00000078   Code   RO          457    i.flash_user_system_data_erase  at32f435_437_flash.o
-    0x00001198   0x00001198   0x00000050   Code   RO          458    i.flash_user_system_data_program  at32f435_437_flash.o
-    0x000011e8   0x000011e8   0x00000058   Code   RO          459    i.flash_word_program  at32f435_437_flash.o
-    0x00001240   0x00001240   0x00000004   Code   RO          686    i.gpio_bits_reset   at32f435_437_gpio.o
-    0x00001244   0x00001244   0x00000004   Code   RO          687    i.gpio_bits_set     at32f435_437_gpio.o
-    0x00001248   0x00001248   0x0000000a   Code   RO          688    i.gpio_bits_write   at32f435_437_gpio.o
-    0x00001252   0x00001252   0x00000014   Code   RO          689    i.gpio_default_para_init  at32f435_437_gpio.o
-    0x00001266   0x00001266   0x00000064   Code   RO          690    i.gpio_init         at32f435_437_gpio.o
-    0x000012ca   0x000012ca   0x0000000e   Code   RO          691    i.gpio_input_data_bit_read  at32f435_437_gpio.o
-    0x000012d8   0x000012d8   0x00000006   Code   RO          692    i.gpio_input_data_read  at32f435_437_gpio.o
-    0x000012de   0x000012de   0x0000000e   Code   RO          693    i.gpio_output_data_bit_read  at32f435_437_gpio.o
-    0x000012ec   0x000012ec   0x00000006   Code   RO          694    i.gpio_output_data_read  at32f435_437_gpio.o
-    0x000012f2   0x000012f2   0x00000030   Code   RO          695    i.gpio_pin_mux_config  at32f435_437_gpio.o
-    0x00001322   0x00001322   0x00000010   Code   RO          696    i.gpio_pin_wp_config  at32f435_437_gpio.o
-    0x00001332   0x00001332   0x00000010   Code   RO          697    i.gpio_pins_huge_driven_config  at32f435_437_gpio.o
-    0x00001342   0x00001342   0x00000004   Code   RO          698    i.gpio_port_write   at32f435_437_gpio.o
+    0x000009cc   0x000009cc   0x00000028   Code   RO          462    i.flash_bank1_erase  at32f435_437_flash.o
+    0x000009f4   0x000009f4   0x00000010   Code   RO          463    i.flash_bank1_lock  at32f435_437_flash.o
+    0x00000a04   0x00000a04   0x00000028   Code   RO          464    i.flash_bank1_operation_status_get  at32f435_437_flash.o
+    0x00000a2c   0x00000a2c   0x00000020   Code   RO          465    i.flash_bank1_operation_wait_for  at32f435_437_flash.o
+    0x00000a4c   0x00000a4c   0x00000018   Code   RO          466    i.flash_bank1_unlock  at32f435_437_flash.o
+    0x00000a64   0x00000a64   0x00000028   Code   RO          467    i.flash_bank2_erase  at32f435_437_flash.o
+    0x00000a8c   0x00000a8c   0x00000010   Code   RO          468    i.flash_bank2_lock  at32f435_437_flash.o
+    0x00000a9c   0x00000a9c   0x00000028   Code   RO          469    i.flash_bank2_operation_status_get  at32f435_437_flash.o
+    0x00000ac4   0x00000ac4   0x00000020   Code   RO          470    i.flash_bank2_operation_wait_for  at32f435_437_flash.o
+    0x00000ae4   0x00000ae4   0x00000018   Code   RO          471    i.flash_bank2_unlock  at32f435_437_flash.o
+    0x00000afc   0x00000afc   0x00000068   Code   RO          472    i.flash_block_erase  at32f435_437_flash.o
+    0x00000b64   0x00000b64   0x00000058   Code   RO          473    i.flash_byte_program  at32f435_437_flash.o
+    0x00000bbc   0x00000bbc   0x00000010   Code   RO          474    i.flash_continue_read_enable  at32f435_437_flash.o
+    0x00000bcc   0x00000bcc   0x00000030   Code   RO          475    i.flash_crc_calibrate  at32f435_437_flash.o
+    0x00000bfc   0x00000bfc   0x00000044   Code   RO          476    i.flash_eopb0_config  at32f435_437_flash.o
+    0x00000c40   0x00000c40   0x000000d0   Code   RO          477    i.flash_epp_set     at32f435_437_flash.o
+    0x00000d10   0x00000d10   0x00000014   Code   RO          478    i.flash_epp_status_get  at32f435_437_flash.o
+    0x00000d24   0x00000d24   0x00000078   Code   RO          479    i.flash_fap_enable  at32f435_437_flash.o
+    0x00000d9c   0x00000d9c   0x00000010   Code   RO          480    i.flash_fap_status_get  at32f435_437_flash.o
+    0x00000dac   0x00000dac   0x00000020   Code   RO          481    i.flash_flag_clear  at32f435_437_flash.o
+    0x00000dcc   0x00000dcc   0x00000038   Code   RO          482    i.flash_flag_get    at32f435_437_flash.o
+    0x00000e04   0x00000e04   0x00000058   Code   RO          483    i.flash_halfword_program  at32f435_437_flash.o
+    0x00000e5c   0x00000e5c   0x00000050   Code   RO          484    i.flash_internal_all_erase  at32f435_437_flash.o
+    0x00000eac   0x00000eac   0x00000040   Code   RO          485    i.flash_interrupt_enable  at32f435_437_flash.o
+    0x00000eec   0x00000eec   0x0000001c   Code   RO          486    i.flash_lock        at32f435_437_flash.o
+    0x00000f08   0x00000f08   0x00000010   Code   RO          487    i.flash_nzw_boost_enable  at32f435_437_flash.o
+    0x00000f18   0x00000f18   0x00000028   Code   RO          488    i.flash_operation_status_get  at32f435_437_flash.o
+    0x00000f40   0x00000f40   0x00000020   Code   RO          489    i.flash_operation_wait_for  at32f435_437_flash.o
+    0x00000f60   0x00000f60   0x00000068   Code   RO          490    i.flash_sector_erase  at32f435_437_flash.o
+    0x00000fc8   0x00000fc8   0x00000028   Code   RO          491    i.flash_slib_disable  at32f435_437_flash.o
+    0x00000ff0   0x00000ff0   0x00000074   Code   RO          492    i.flash_slib_enable  at32f435_437_flash.o
+    0x00001064   0x00001064   0x0000000c   Code   RO          493    i.flash_slib_end_sector_get  at32f435_437_flash.o
+    0x00001070   0x00001070   0x0000000c   Code   RO          494    i.flash_slib_inststart_sector_get  at32f435_437_flash.o
+    0x0000107c   0x0000107c   0x00000010   Code   RO          495    i.flash_slib_remaining_count_get  at32f435_437_flash.o
+    0x0000108c   0x0000108c   0x0000000c   Code   RO          496    i.flash_slib_start_sector_get  at32f435_437_flash.o
+    0x00001098   0x00001098   0x00000014   Code   RO          497    i.flash_slib_state_get  at32f435_437_flash.o
+    0x000010ac   0x000010ac   0x00000044   Code   RO          498    i.flash_ssb_set     at32f435_437_flash.o
+    0x000010f0   0x000010f0   0x00000010   Code   RO          499    i.flash_ssb_status_get  at32f435_437_flash.o
+    0x00001100   0x00001100   0x00000020   Code   RO          500    i.flash_unlock      at32f435_437_flash.o
+    0x00001120   0x00001120   0x00000078   Code   RO          501    i.flash_user_system_data_erase  at32f435_437_flash.o
+    0x00001198   0x00001198   0x00000050   Code   RO          502    i.flash_user_system_data_program  at32f435_437_flash.o
+    0x000011e8   0x000011e8   0x00000058   Code   RO          503    i.flash_word_program  at32f435_437_flash.o
+    0x00001240   0x00001240   0x00000004   Code   RO          730    i.gpio_bits_reset   at32f435_437_gpio.o
+    0x00001244   0x00001244   0x00000004   Code   RO          731    i.gpio_bits_set     at32f435_437_gpio.o
+    0x00001248   0x00001248   0x0000000a   Code   RO          732    i.gpio_bits_write   at32f435_437_gpio.o
+    0x00001252   0x00001252   0x00000014   Code   RO          733    i.gpio_default_para_init  at32f435_437_gpio.o
+    0x00001266   0x00001266   0x00000064   Code   RO          734    i.gpio_init         at32f435_437_gpio.o
+    0x000012ca   0x000012ca   0x0000000e   Code   RO          735    i.gpio_input_data_bit_read  at32f435_437_gpio.o
+    0x000012d8   0x000012d8   0x00000006   Code   RO          736    i.gpio_input_data_read  at32f435_437_gpio.o
+    0x000012de   0x000012de   0x0000000e   Code   RO          737    i.gpio_output_data_bit_read  at32f435_437_gpio.o
+    0x000012ec   0x000012ec   0x00000006   Code   RO          738    i.gpio_output_data_read  at32f435_437_gpio.o
+    0x000012f2   0x000012f2   0x00000030   Code   RO          739    i.gpio_pin_mux_config  at32f435_437_gpio.o
+    0x00001322   0x00001322   0x00000010   Code   RO          740    i.gpio_pin_wp_config  at32f435_437_gpio.o
+    0x00001332   0x00001332   0x00000010   Code   RO          741    i.gpio_pins_huge_driven_config  at32f435_437_gpio.o
+    0x00001342   0x00001342   0x00000004   Code   RO          742    i.gpio_port_write   at32f435_437_gpio.o
     0x00001346   0x00001346   0x00000002   PAD
-    0x00001348   0x00001348   0x000000a4   Code   RO          699    i.gpio_reset        at32f435_437_gpio.o
+    0x00001348   0x00001348   0x000000a4   Code   RO          743    i.gpio_reset        at32f435_437_gpio.o
     0x000013ec   0x000013ec   0x00000094   Code   RO           18    i.init_clk          flashprg.o
-    0x00001480   0x00001480   0x00000010   Code   RO          788    i.pwc_battery_powered_domain_access  at32f435_437_pwc.o
-    0x00001490   0x00001490   0x0000002c   Code   RO          789    i.pwc_deep_sleep_mode_enter  at32f435_437_pwc.o
-    0x000014bc   0x000014bc   0x00000020   Code   RO          790    i.pwc_flag_clear    at32f435_437_pwc.o
-    0x000014dc   0x000014dc   0x00000014   Code   RO          791    i.pwc_flag_get      at32f435_437_pwc.o
-    0x000014f0   0x000014f0   0x00000010   Code   RO          792    i.pwc_power_voltage_monitor_enable  at32f435_437_pwc.o
-    0x00001500   0x00001500   0x00000010   Code   RO          793    i.pwc_pvm_level_select  at32f435_437_pwc.o
-    0x00001510   0x00001510   0x0000001c   Code   RO          794    i.pwc_reset         at32f435_437_pwc.o
-    0x0000152c   0x0000152c   0x00000024   Code   RO          795    i.pwc_sleep_mode_enter  at32f435_437_pwc.o
-    0x00001550   0x00001550   0x00000028   Code   RO          796    i.pwc_standby_mode_enter  at32f435_437_pwc.o
-    0x00001578   0x00001578   0x00000010   Code   RO          797    i.pwc_voltage_regulate_set  at32f435_437_pwc.o
-    0x00001588   0x00001588   0x00000018   Code   RO          798    i.pwc_wakeup_pin_enable  at32f435_437_pwc.o
-    0x000015a0   0x000015a0   0x0000000a   Code   RO          872    i.qspi_busy_config  at32f435_437_qspi.o
-    0x000015aa   0x000015aa   0x00000006   Code   RO          873    i.qspi_byte_read    at32f435_437_qspi.o
-    0x000015b0   0x000015b0   0x00000006   Code   RO          874    i.qspi_byte_write   at32f435_437_qspi.o
-    0x000015b6   0x000015b6   0x0000000a   Code   RO          875    i.qspi_clk_division_set  at32f435_437_qspi.o
+    0x00001480   0x00001480   0x00000010   Code   RO          832    i.pwc_battery_powered_domain_access  at32f435_437_pwc.o
+    0x00001490   0x00001490   0x0000002c   Code   RO          833    i.pwc_deep_sleep_mode_enter  at32f435_437_pwc.o
+    0x000014bc   0x000014bc   0x00000020   Code   RO          834    i.pwc_flag_clear    at32f435_437_pwc.o
+    0x000014dc   0x000014dc   0x00000014   Code   RO          835    i.pwc_flag_get      at32f435_437_pwc.o
+    0x000014f0   0x000014f0   0x00000010   Code   RO          836    i.pwc_power_voltage_monitor_enable  at32f435_437_pwc.o
+    0x00001500   0x00001500   0x00000010   Code   RO          837    i.pwc_pvm_level_select  at32f435_437_pwc.o
+    0x00001510   0x00001510   0x0000001c   Code   RO          838    i.pwc_reset         at32f435_437_pwc.o
+    0x0000152c   0x0000152c   0x00000024   Code   RO          839    i.pwc_sleep_mode_enter  at32f435_437_pwc.o
+    0x00001550   0x00001550   0x00000028   Code   RO          840    i.pwc_standby_mode_enter  at32f435_437_pwc.o
+    0x00001578   0x00001578   0x00000010   Code   RO          841    i.pwc_voltage_regulate_set  at32f435_437_pwc.o
+    0x00001588   0x00001588   0x00000018   Code   RO          842    i.pwc_wakeup_pin_enable  at32f435_437_pwc.o
+    0x000015a0   0x000015a0   0x0000000a   Code   RO          916    i.qspi_busy_config  at32f435_437_qspi.o
+    0x000015aa   0x000015aa   0x00000006   Code   RO          917    i.qspi_byte_read    at32f435_437_qspi.o
+    0x000015b0   0x000015b0   0x00000006   Code   RO          918    i.qspi_byte_write   at32f435_437_qspi.o
+    0x000015b6   0x000015b6   0x0000000a   Code   RO          919    i.qspi_clk_division_set  at32f435_437_qspi.o
     0x000015c0   0x000015c0   0x00000048   Code   RO           19    i.qspi_cmd_init     flashprg.o
-    0x00001608   0x00001608   0x00000044   Code   RO          876    i.qspi_cmd_operation_kick  at32f435_437_qspi.o
-    0x0000164c   0x0000164c   0x0000000a   Code   RO          877    i.qspi_dma_enable   at32f435_437_qspi.o
-    0x00001656   0x00001656   0x0000000a   Code   RO          878    i.qspi_dma_rx_threshold_set  at32f435_437_qspi.o
-    0x00001660   0x00001660   0x0000000a   Code   RO          879    i.qspi_dma_tx_threshold_set  at32f435_437_qspi.o
-    0x0000166a   0x0000166a   0x0000000a   Code   RO          880    i.qspi_encryption_enable  at32f435_437_qspi.o
-    0x00001674   0x00001674   0x00000006   Code   RO          881    i.qspi_flag_clear   at32f435_437_qspi.o
-    0x0000167a   0x0000167a   0x00000024   Code   RO          882    i.qspi_flag_get     at32f435_437_qspi.o
+    0x00001608   0x00001608   0x00000044   Code   RO          920    i.qspi_cmd_operation_kick  at32f435_437_qspi.o
+    0x0000164c   0x0000164c   0x0000000a   Code   RO          921    i.qspi_dma_enable   at32f435_437_qspi.o
+    0x00001656   0x00001656   0x0000000a   Code   RO          922    i.qspi_dma_rx_threshold_set  at32f435_437_qspi.o
+    0x00001660   0x00001660   0x0000000a   Code   RO          923    i.qspi_dma_tx_threshold_set  at32f435_437_qspi.o
+    0x0000166a   0x0000166a   0x0000000a   Code   RO          924    i.qspi_encryption_enable  at32f435_437_qspi.o
+    0x00001674   0x00001674   0x00000006   Code   RO          925    i.qspi_flag_clear   at32f435_437_qspi.o
+    0x0000167a   0x0000167a   0x00000024   Code   RO          926    i.qspi_flag_get     at32f435_437_qspi.o
     0x0000169e   0x0000169e   0x00000002   PAD
     0x000016a0   0x000016a0   0x00000120   Code   RO           20    i.qspi_gpio_init    flashprg.o
-    0x000017c0   0x000017c0   0x00000006   Code   RO          883    i.qspi_half_word_read  at32f435_437_qspi.o
-    0x000017c6   0x000017c6   0x00000006   Code   RO          884    i.qspi_half_word_write  at32f435_437_qspi.o
-    0x000017cc   0x000017cc   0x0000000a   Code   RO          885    i.qspi_interrupt_enable  at32f435_437_qspi.o
-    0x000017d6   0x000017d6   0x0000000a   Code   RO          886    i.qspi_sck_mode_set  at32f435_437_qspi.o
-    0x000017e0   0x000017e0   0x00000006   Code   RO          887    i.qspi_word_read    at32f435_437_qspi.o
-    0x000017e6   0x000017e6   0x00000006   Code   RO          888    i.qspi_word_write   at32f435_437_qspi.o
-    0x000017ec   0x000017ec   0x0000000a   Code   RO          889    i.qspi_xip_cache_bypass_set  at32f435_437_qspi.o
-    0x000017f6   0x000017f6   0x00000038   Code   RO          890    i.qspi_xip_enable   at32f435_437_qspi.o
-    0x0000182e   0x0000182e   0x00000050   Code   RO          891    i.qspi_xip_init     at32f435_437_qspi.o
+    0x000017c0   0x000017c0   0x00000006   Code   RO          927    i.qspi_half_word_read  at32f435_437_qspi.o
+    0x000017c6   0x000017c6   0x00000006   Code   RO          928    i.qspi_half_word_write  at32f435_437_qspi.o
+    0x000017cc   0x000017cc   0x0000000a   Code   RO          929    i.qspi_interrupt_enable  at32f435_437_qspi.o
+    0x000017d6   0x000017d6   0x0000000a   Code   RO          930    i.qspi_sck_mode_set  at32f435_437_qspi.o
+    0x000017e0   0x000017e0   0x00000006   Code   RO          931    i.qspi_word_read    at32f435_437_qspi.o
+    0x000017e6   0x000017e6   0x00000006   Code   RO          932    i.qspi_word_write   at32f435_437_qspi.o
+    0x000017ec   0x000017ec   0x0000000a   Code   RO          933    i.qspi_xip_cache_bypass_set  at32f435_437_qspi.o
+    0x000017f6   0x000017f6   0x00000038   Code   RO          934    i.qspi_xip_enable   at32f435_437_qspi.o
+    0x0000182e   0x0000182e   0x00000050   Code   RO          935    i.qspi_xip_init     at32f435_437_qspi.o
     0x0000187e   0x0000187e   0x00000002   PAD
-    0x00001880   0x00001880   0x0000008c   Code   RO         1011    i.system_core_clock_update  system_at32f435_437.o
+    0x00001880   0x00001880   0x0000008c   Code   RO         1055    i.system_core_clock_update  system_at32f435_437.o
     0x0000190c   0x0000190c   0x00000028   Code   RO           21    i.uninit_clk        flashprg.o
     0x00001934   0x00001934   0x00000026   Data   RO          227    .constdata          at32f435_437_crm.o
     0x0000195a   0x0000195a   0x00000002   PAD
-    0x0000195c   0x0000195c   0x00000008   Data   RO          460    .constdata          at32f435_437_flash.o
-    0x00001964   0x00001964   0x00000016   Data   RO         1012    .constdata          system_at32f435_437.o
+    0x0000195c   0x0000195c   0x00000008   Data   RO          504    .constdata          at32f435_437_flash.o
+    0x00001964   0x00001964   0x00000016   Data   RO         1056    .constdata          system_at32f435_437.o
 
 
     Execution Region PrgData (Exec base: 0x0000197c, Load base: 0x0000197c, Size: 0x00000008, Max: 0xffffffff, PI)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x0000197c   0x0000197c   0x00000004   Data   RW         1093    PDT$$ptr            anon$$obj.o
-    0x00001980   0x00001980   0x00000004   Data   RW         1013    .data               system_at32f435_437.o
+    0x0000197c   0x0000197c   0x00000004   Data   RW         1137    PDT$$ptr            anon$$obj.o
+    0x00001980   0x00001980   0x00000004   Data   RW         1057    .data               system_at32f435_437.o
 
 
 
@@ -753,17 +753,17 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      1402        200         38          0          0      27145   at32f435_437_crm.o
+      1402        200         38          0          0      75633   at32f435_437_crm.o
       2178        284          8          0          0      32992   at32f435_437_flash.o
        440         36          0          0          0      12216   at32f435_437_gpio.o
        302         54          0          0          0       8977   at32f435_437_pwc.o
        386          0          0          0          0      15963   at32f435_437_qspi.o
-         0          0       4256          0          0        630   flashdev.o
-      1224        136          0          0          0      68516   flashprg.o
+         0          0       4256          0          0        602   flashdev.o
+      1224        136          0          0          0      41832   flashprg.o
        262         38         22          4          0       4356   system_at32f435_437.o
 
     ----------------------------------------------------------------------
-      6214        748       4328          8          0     170795   Object Totals
+      6214        748       4328          8          0     192571   Object Totals
          0          0          0          4          0          0   (incl. Generated)
         20          0          4          0          0          0   (incl. Padding)
 
@@ -793,8 +793,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      6452        748       4328          8          0     155371   Grand Totals
-      6452        748       4328          8          0     155371   ELF Image Totals
+      6452        748       4328          8          0     177147   Grand Totals
+      6452        748       4328          8          0     177147   ELF Image Totals
       6452        748       4328          8          0          0   ROM Totals
 
 ==============================================================================

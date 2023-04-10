@@ -1,6 +1,6 @@
 Dependencies for Project 'Project', Target 'Project': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARM_COM5
-F (..\user\main.c)(0x6428254A)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\libraries\drivers\inc -I ..\libraries\cmsis\cm4\core_support -I ..\libraries\cmsis\cm4\device_support -I ..\freertos\source\include -I ..\freertos\source\portable\rvds\ARM_CM4F -I ..\user\inc -I ..\app_task\inc -I ..\driver\inc-ID:\A_Sofoware\Stu_Soft\Keil\pack\ArteryTek\AT32F435_437_DFP\2.1.3\Device\Include-D__UVISION_VERSION="538" -DAT32F435RGT7 -DAT32F435ZMT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F435_V1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\user\main.c)(0x642BED26)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\libraries\drivers\inc -I ..\libraries\cmsis\cm4\core_support -I ..\libraries\cmsis\cm4\device_support -I ..\freertos\source\include -I ..\freertos\source\portable\rvds\ARM_CM4F -I ..\user\inc -I ..\app_task\inc -I ..\driver\inc-ID:\A_Sofoware\Stu_Soft\Keil\pack\ArteryTek\AT32F435_437_DFP\2.1.3\Device\Include-D__UVISION_VERSION="538" -DAT32F435RGT7 -DAT32F435ZMT7 -DUSE_STDPERIPH_DRIVER -DAT_START_F435_V1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\user\inc\main.h)(0x6426C910)
 I (D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\include\stdio.h)(0x5E8E3CC2)
 I (D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\include\string.h)(0x5E8E3CC2)

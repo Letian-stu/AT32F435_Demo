@@ -404,11 +404,6 @@
               <FilePath>..\user\at32f435_437_board.c</FilePath>
             </File>
             <File>
-              <FileName>freertos_tick.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\user\freertos_tick.c</FilePath>
-            </File>
-            <File>
               <FileName>main.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\user\inc\main.h</FilePath>
@@ -417,9 +412,6 @@
         </Group>
         <Group>
           <GroupName>::Device</GroupName>
-        </Group>
-        <Group>
-          <GroupName>::LVGL</GroupName>
         </Group>
         <Group>
           <GroupName>::RTOS</GroupName>
@@ -655,30 +647,6 @@
       </component>
       <component Cclass="Device" Cgroup="at32f435_437_firmware_library" Csub="xmc" Cvendor="ArteryTek" Cversion="2.0.0" condition="AT32F435_437 STDPERIPHERALS CRM">
         <package name="AT32F435_437_DFP" schemaVersion="1.2" url="" vendor="ArteryTek" version="2.1.3"/>
-        <targetInfos>
-          <targetInfo name="Project"/>
-        </targetInfos>
-      </component>
-      <component Cbundle="LVGL" Cclass="LVGL" Cgroup="lvgl" Csub="Benchmark" Cvendor="LVGL" Cversion="8.3.5" condition="LVGL-Essential">
-        <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="8.3.5"/>
-        <targetInfos>
-          <targetInfo name="Project"/>
-        </targetInfos>
-      </component>
-      <component Cbundle="LVGL" Cclass="LVGL" Cgroup="lvgl" Csub="Essential" Cvendor="LVGL" Cversion="8.3.5">
-        <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="8.3.5"/>
-        <targetInfos>
-          <targetInfo name="Project"/>
-        </targetInfos>
-      </component>
-      <component Cbundle="LVGL" Cclass="LVGL" Cgroup="lvgl" Csub="Extra Themes" Cvendor="LVGL" Cversion="8.3.5" condition="LVGL-Essential">
-        <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="8.3.5"/>
-        <targetInfos>
-          <targetInfo name="Project"/>
-        </targetInfos>
-      </component>
-      <component Cbundle="LVGL" Cclass="LVGL" Cgroup="lvgl" Csub="Porting" Cvendor="LVGL" Cversion="8.3.5" condition="LVGL-Essential">
-        <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="8.3.5"/>
         <targetInfos>
           <targetInfo name="Project"/>
         </targetInfos>
@@ -940,68 +908,52 @@
         </targetInfos>
       </file>
       <file attr="config" category="sourceC" name="lv_cmsis_pack.c" version="1.0.0">
-        <instance index="0">RTE\LVGL\lv_cmsis_pack.c</instance>
+        <instance index="0" removed="1">RTE\LVGL\lv_cmsis_pack.c</instance>
         <component Cbundle="LVGL" Cclass="LVGL" Cgroup="lvgl" Csub="Essential" Cvendor="LVGL" Cversion="8.3.5"/>
         <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="8.3.5"/>
-        <targetInfos>
-          <targetInfo name="Project"/>
-        </targetInfos>
+        <targetInfos/>
       </file>
       <file attr="config" category="preIncludeGlobal" name="lv_conf_cmsis.h" version="1.0.2">
-        <instance index="0">RTE\LVGL\lv_conf_cmsis.h</instance>
+        <instance index="0" removed="1">RTE\LVGL\lv_conf_cmsis.h</instance>
         <component Cbundle="LVGL" Cclass="LVGL" Cgroup="lvgl" Csub="Essential" Cvendor="LVGL" Cversion="8.3.5"/>
         <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="8.3.5"/>
-        <targetInfos>
-          <targetInfo name="Project"/>
-        </targetInfos>
+        <targetInfos/>
       </file>
       <file attr="config" category="sourceC" name="examples\porting\lv_port_disp_template.c" version="1.0.1">
-        <instance index="0">RTE\LVGL\lv_port_disp_template.c</instance>
+        <instance index="0" removed="1">RTE\LVGL\lv_port_disp_template.c</instance>
         <component Cbundle="LVGL" Cclass="LVGL" Cgroup="lvgl" Csub="Porting" Cvendor="LVGL" Cversion="8.3.5" condition="LVGL-Essential"/>
         <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="8.3.5"/>
-        <targetInfos>
-          <targetInfo name="Project"/>
-        </targetInfos>
+        <targetInfos/>
       </file>
       <file attr="config" category="header" name="examples\porting\lv_port_disp_template.h" version="1.0.1">
-        <instance index="0">RTE\LVGL\lv_port_disp_template.h</instance>
+        <instance index="0" removed="1">RTE\LVGL\lv_port_disp_template.h</instance>
         <component Cbundle="LVGL" Cclass="LVGL" Cgroup="lvgl" Csub="Porting" Cvendor="LVGL" Cversion="8.3.5" condition="LVGL-Essential"/>
         <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="8.3.5"/>
-        <targetInfos>
-          <targetInfo name="Project"/>
-        </targetInfos>
+        <targetInfos/>
       </file>
       <file attr="config" category="sourceC" name="examples\porting\lv_port_fs_template.c" version="1.0.0">
-        <instance index="0">RTE\LVGL\lv_port_fs_template.c</instance>
+        <instance index="0" removed="1">RTE\LVGL\lv_port_fs_template.c</instance>
         <component Cbundle="LVGL" Cclass="LVGL" Cgroup="lvgl" Csub="Porting" Cvendor="LVGL" Cversion="8.3.5" condition="LVGL-Essential"/>
         <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="8.3.5"/>
-        <targetInfos>
-          <targetInfo name="Project"/>
-        </targetInfos>
+        <targetInfos/>
       </file>
       <file attr="config" category="header" name="examples\porting\lv_port_fs_template.h" version="1.0.0">
-        <instance index="0">RTE\LVGL\lv_port_fs_template.h</instance>
+        <instance index="0" removed="1">RTE\LVGL\lv_port_fs_template.h</instance>
         <component Cbundle="LVGL" Cclass="LVGL" Cgroup="lvgl" Csub="Porting" Cvendor="LVGL" Cversion="8.3.5" condition="LVGL-Essential"/>
         <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="8.3.5"/>
-        <targetInfos>
-          <targetInfo name="Project"/>
-        </targetInfos>
+        <targetInfos/>
       </file>
       <file attr="config" category="sourceC" name="examples\porting\lv_port_indev_template.c" version="1.0.0">
-        <instance index="0">RTE\LVGL\lv_port_indev_template.c</instance>
+        <instance index="0" removed="1">RTE\LVGL\lv_port_indev_template.c</instance>
         <component Cbundle="LVGL" Cclass="LVGL" Cgroup="lvgl" Csub="Porting" Cvendor="LVGL" Cversion="8.3.5" condition="LVGL-Essential"/>
         <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="8.3.5"/>
-        <targetInfos>
-          <targetInfo name="Project"/>
-        </targetInfos>
+        <targetInfos/>
       </file>
       <file attr="config" category="header" name="examples\porting\lv_port_indev_template.h" version="1.0.0">
-        <instance index="0">RTE\LVGL\lv_port_indev_template.h</instance>
+        <instance index="0" removed="1">RTE\LVGL\lv_port_indev_template.h</instance>
         <component Cbundle="LVGL" Cclass="LVGL" Cgroup="lvgl" Csub="Porting" Cvendor="LVGL" Cversion="8.3.5" condition="LVGL-Essential"/>
         <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="8.3.5"/>
-        <targetInfos>
-          <targetInfo name="Project"/>
-        </targetInfos>
+        <targetInfos/>
       </file>
       <file attr="config" category="header" condition="CoreM" name="Config\ARMCM\FreeRTOSConfig.h" version="10.3.0">
         <instance index="0">RTE\RTOS\FreeRTOSConfig.h</instance>

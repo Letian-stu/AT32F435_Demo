@@ -1,11 +1,8 @@
 .\objects\freertos_tick.o: ..\user\freertos_tick.c
-.\objects\freertos_tick.o: ./RTE/LVGL/lv_conf_cmsis.h
-.\objects\freertos_tick.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdint.h
-.\objects\freertos_tick.o: .\RTE\_Project\RTE_Components.h
-.\objects\freertos_tick.o: .\RTE\_Project\Pre_Include_Global.h
 .\objects\freertos_tick.o: ..\user\inc\freertos_tick.h
 .\objects\freertos_tick.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ArteryTek\AT32F435_437_DFP\2.1.3\Device\Include\at32f435_437.h
 .\objects\freertos_tick.o: ..\libraries\cmsis\cm4\core_support\core_cm4.h
+.\objects\freertos_tick.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdint.h
 .\objects\freertos_tick.o: ..\libraries\cmsis\cm4\core_support\cmsis_version.h
 .\objects\freertos_tick.o: ..\libraries\cmsis\cm4\core_support\cmsis_compiler.h
 .\objects\freertos_tick.o: ..\libraries\cmsis\cm4\core_support\cmsis_armcc.h

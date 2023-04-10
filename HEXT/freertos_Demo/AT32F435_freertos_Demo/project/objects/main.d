@@ -1,4 +1,5 @@
 .\objects\main.o: ..\user\main.c
+.\objects\main.o: ..\user\inc\main.h
 .\objects\main.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdio.h
 .\objects\main.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\string.h
 .\objects\main.o: ..\libraries\cmsis\cm4\device_support\at32f435_437.h
@@ -42,9 +43,9 @@
 .\objects\main.o: ..\libraries\drivers\inc\at32f435_437_usb.h
 .\objects\main.o: ..\user\inc\at32f435_437_clock.h
 .\objects\main.o: ..\user\inc\at32f435_437_board.h
+.\objects\main.o: ..\user\inc\FreeRTOSConfig.h
 .\objects\main.o: ..\freertos\source\include\FreeRTOS.h
 .\objects\main.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stddef.h
-.\objects\main.o: ..\user\inc\FreeRTOSConfig.h
 .\objects\main.o: ..\freertos\source\include\projdefs.h
 .\objects\main.o: ..\freertos\source\include\portable.h
 .\objects\main.o: ..\freertos\source\include\deprecated_definitions.h

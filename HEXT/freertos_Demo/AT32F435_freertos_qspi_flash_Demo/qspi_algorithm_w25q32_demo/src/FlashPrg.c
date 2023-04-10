@@ -342,7 +342,7 @@ void init_clk(void)
   crm_auto_step_mode_enable(FALSE);
 
   /* update system_core_clock global variable */
-  system_core_clock_update();	
+  system_core_clock_update();
 }
 
 /**

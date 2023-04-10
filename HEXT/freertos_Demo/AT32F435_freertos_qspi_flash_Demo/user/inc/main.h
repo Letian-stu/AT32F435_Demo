@@ -16,5 +16,5 @@
 #include "semphr.h"
 
 #include "drv_qspi.h"
-
+volatile uint32_t debug_timerTick;//任务运行时间统计使用  
 #endif

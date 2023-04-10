@@ -3,7 +3,6 @@
 ".\objects\at32f435_437_clock.o"
 ".\objects\at32f435_437_int.o"
 ".\objects\at32f435_437_board.o"
-".\objects\freertos_tick.o"
 ".\objects\drv_qspi.o"
 ".\objects\at32f435_437_adc.o"
 ".\objects\at32f435_437_acc.o"
