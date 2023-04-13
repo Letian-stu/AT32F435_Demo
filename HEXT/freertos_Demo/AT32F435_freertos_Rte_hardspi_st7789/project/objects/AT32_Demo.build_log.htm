@@ -1,0 +1,257 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: tian tian, tian, LIC=EXJT4-F9THW-564Q2-90M8K-EMB3R-369X3
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.37.0.0
+Toolchain Path:  D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.12.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+D:\C_Github\AT32F435_Demo\HEXT\freertos_Demo\AT32F435_freertos_Rte_hardspi_st7789\project\Project.uvprojx
+Project File Date:  04/13/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin'
+Build target 'Project'
+compiling bsp_spi_lcd.c...
+linking...
+Program Size: Code=13242 RO-data=618 RW-data=216 ZI-data=33136  
+FromELF: creating hex file...
+".\objects\AT32_Demo.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS-FreeRTOS.10.4.3.pack
+                ARM.CMSIS-FreeRTOS.10.4.3
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Config Variant: FreeRTOS Version: 10.4.3
+   * Component: Core Variant: Cortex-M Version: 10.4.3
+   * Component: Coroutines Version: 10.4.3
+   * Component: Event Groups Version: 10.4.3
+   * Component: Heap Variant: Heap_4 Version: 10.4.3
+   * Component: Message Buffer Version: 10.4.3
+   * Component: Stream Buffer Version: 10.4.3
+   * Component: Timers Version: 10.4.3
+
+Package Vendor: ArteryTek
+                
+                ArteryTek.AT32F435_437_DFP.2.1.3
+                ArteryTek AT32F4 Series Device Support,Drivers
+   * Component: Startup Version: 2.0.0
+   * Component: at32f435_437_conf Version: 2.0.0
+   * Component: acc Version: 2.0.0
+   * Component: adc Version: 2.0.0
+   * Component: can Version: 2.0.0
+   * Component: crc Version: 2.0.0
+   * Component: crm Version: 2.0.0
+   * Component: dac Version: 2.0.0
+   * Component: debug Version: 2.0.0
+   * Component: dma Version: 2.0.0
+   * Component: dvp Version: 2.0.0
+   * Component: edma Version: 2.0.0
+   * Component: emac Version: 2.0.0
+   * Component: ertc Version: 2.0.0
+   * Component: exint Version: 2.0.0
+   * Component: flash Version: 2.0.0
+   * Component: gpio Version: 2.0.0
+   * Component: i2c Version: 2.0.0
+   * Component: misc Version: 2.0.0
+   * Component: pwc Version: 2.0.0
+   * Component: qspi Version: 2.0.0
+   * Component: scfg Version: 2.0.0
+   * Component: sdio Version: 2.0.0
+   * Component: spi Version: 2.0.0
+   * Component: tmr Version: 2.0.0
+   * Component: usart Version: 2.0.0
+   * Component: usb Version: 2.0.0
+   * Component: wdt Version: 2.0.0
+   * Component: wwdt Version: 2.0.0
+   * Component: xmc Version: 2.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/-AT32F435RGT7
+  ./RTE/RTOS
+  ./RTE/_Project
+  D:/A_Sofoware/Stu_Soft/Keil/pack/ARM/CMSIS-FreeRTOS/10.4.3/CMSIS/RTOS2/FreeRTOS/Include
+  D:/A_Sofoware/Stu_Soft/Keil/pack/ARM/CMSIS-FreeRTOS/10.4.3/Source/include
+  D:/A_Sofoware/Stu_Soft/Keil/pack/ARM/CMSIS-FreeRTOS/10.4.3/Source/portable/RVDS/ARM_CM4F
+  D:/A_Sofoware/Stu_Soft/Keil/pack/ArteryTek/AT32F435_437_DFP/2.1.3/Device/Firmware/Peripherals/inc
+  D:/A_Sofoware/Stu_Soft/Keil/pack/ArteryTek/AT32F435_437_DFP/2.1.3/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM.FreeRTOS::RTOS:Config:FreeRTOS:10.4.3
+      Include file:  Config/ARMCM/FreeRTOSConfig.h
+
+   * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.4.3
+      Source file:   Source/queue.c
+      Include file:  Source/include/FreeRTOS.h
+      Include file:  Source/include/semphr.h
+      Include file:  Source/include/queue.h
+      Source file:   Source/list.c
+      Source file:   Source/portable/RVDS/ARM_CM4F/port.c
+      Include file:  Source/include/task.h
+      Source file:   Source/tasks.c
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/freertos_evr.c
+
+   * Component: ARM.FreeRTOS::RTOS:Coroutines:10.4.3
+      Include file:  Source/include/croutine.h
+      Source file:   Source/croutine.c
+
+   * Component: ARM.FreeRTOS::RTOS:Event Groups:10.4.3
+      Source file:   Source/event_groups.c
+      Include file:  Source/include/event_groups.h
+
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:10.4.3
+      Source file:   Source/portable/MemMang/heap_4.c
+
+   * Component: ARM.FreeRTOS::RTOS:Message Buffer:10.4.3
+      Include file:  Source/include/message_buffer.h
+      Source file:   Source/stream_buffer.c
+
+   * Component: ARM.FreeRTOS::RTOS:Stream Buffer:10.4.3
+      Include file:  Source/include/stream_buffer.h
+      Source file:   Source/stream_buffer.c
+
+   * Component: ARM.FreeRTOS::RTOS:Timers:10.4.3
+      Source file:   Source/timers.c
+      Include file:  Source/include/timers.h
+
+   * Component: ArteryTek::Device:Startup:2.0.0
+      Source file:   Device/Source/system_at32f435_437.c
+      Include file:  Device/Include/at32f435_437.h
+      Source file:   Device/Source/ARM/startup_at32f435_437.s
+
+   * Component: ArteryTek::Device:at32f435_437_conf:2.0.0
+      Include file:  Device/Include/at32f435_437_conf.h
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:acc:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_acc.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_acc.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:adc:2.0.0
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_adc.c
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_adc.h
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:can:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_can.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_can.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:crc:2.0.0
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_crc.c
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_crc.h
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:crm:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_crm.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_crm.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:dac:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_dac.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_dac.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:debug:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_debug.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_debug.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:dma:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_dma.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_dma.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:dvp:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_dvp.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_dvp.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:edma:2.0.0
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_edma.c
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_edma.h
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:emac:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_emac.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_emac.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:ertc:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_ertc.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_ertc.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:exint:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_exint.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_exint.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:flash:2.0.0
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_flash.c
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_flash.h
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:gpio:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_gpio.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_gpio.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:i2c:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_i2c.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_i2c.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:misc:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_misc.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_misc.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:pwc:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_pwc.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_pwc.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:qspi:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_qspi.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_qspi.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:scfg:2.0.0
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_scfg.c
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_scfg.h
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:sdio:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_sdio.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_sdio.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:spi:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_spi.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_spi.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:tmr:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_tmr.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_tmr.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:usart:2.0.0
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_usart.c
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_usart.h
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:usb:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_usb.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_usb.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:wdt:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_wdt.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_wdt.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:wwdt:2.0.0
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_wwdt.h
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_wwdt.c
+
+   * Component: ArteryTek::Device:at32f435_437_firmware_library:xmc:2.0.0
+      Source file:   Device/Firmware/Peripherals/src/at32f435_437_xmc.c
+      Include file:  Device/Firmware/Peripherals/inc/at32f435_437_xmc.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.\objects\lv_async.o: D:/A_Sofoware/Stu_Soft/Keil/pack/LVGL/lvgl/8.3.5/src/misc/lv_async.c
+.\objects\lv_async.o: ./RTE/LVGL/lv_conf_cmsis.h
+.\objects\lv_async.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdint.h
+.\objects\lv_async.o: .\RTE\_Project\RTE_Components.h
+.\objects\lv_async.o: .\RTE\_Project\Pre_Include_Global.h
+.\objects\lv_async.o: D:/A_Sofoware/Stu_Soft/Keil/pack/LVGL/lvgl/8.3.5/src/misc/lv_async.h
+.\objects\lv_async.o: D:/A_Sofoware/Stu_Soft/Keil/pack/LVGL/lvgl/8.3.5/src/misc/lv_types.h
+.\objects\lv_async.o: D:/A_Sofoware/Stu_Soft/Keil/pack/LVGL/lvgl/8.3.5/src/misc/lv_mem.h
+.\objects\lv_async.o: D:/A_Sofoware/Stu_Soft/Keil/pack/LVGL/lvgl/8.3.5/src/misc/../lv_conf_internal.h
+.\objects\lv_async.o: D:/A_Sofoware/Stu_Soft/Keil/pack/LVGL/lvgl/8.3.5/src/misc/../lv_conf_kconfig.h
+.\objects\lv_async.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stddef.h
+.\objects\lv_async.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\string.h
+.\objects\lv_async.o: D:/A_Sofoware/Stu_Soft/Keil/pack/LVGL/lvgl/8.3.5/src/misc/lv_timer.h
+.\objects\lv_async.o: D:/A_Sofoware/Stu_Soft/Keil/pack/LVGL/lvgl/8.3.5/src/misc/../hal/lv_hal_tick.h
+.\objects\lv_async.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdbool.h
