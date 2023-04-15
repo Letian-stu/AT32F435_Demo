@@ -1,18 +1,6 @@
 #include "lvgl.h"
 #include "lv_tick_custom.h"
 
-volatile static uint32_t system_ms = 0;
-
-/**
-  * @brief  get the systick by ms
-  * @param  none
-  * @retval ms
-  */
-uint32_t millis(void)
-{
-    return system_ms;
-}
-
 void lv_ms_tick_tim(void)
 {
 	crm_clocks_freq_type crm_clocks_freq_struct = {0};
@@ -36,10 +24,8 @@ void lv_ms_tick_tim(void)
 void TMR1_OVF_TMR10_IRQHandler(void)
 {
   if(tmr_flag_get(TMR1, TMR_OVF_FLAG) == SET)
-  {
-		system_ms++;  
-		
-		//lv_tick_inc(1);
+  {	
+		lv_tick_inc(1);
     tmr_flag_clear(TMR1, TMR_OVF_FLAG);
   }
 }
