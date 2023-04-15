@@ -737,14 +737,10 @@ ARM Macro Assembler    Page 12
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
 interwork --depend=.\objects\startup_at32f435_437.d -o.\objects\startup_at32f43
-5_437.o -I.\RTE\RTOS -I.\RTE\_Project -ID:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CM
-SIS-FreeRTOS\10.4.3\CMSIS\RTOS2\FreeRTOS\Include -ID:\A_Sofoware\Stu_Soft\Keil\
-pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include -ID:\A_Sofoware\Stu_Soft\Keil\pac
-k\ARM\CMSIS-FreeRTOS\10.4.3\Source\portable\RVDS\ARM_CM4F -ID:\A_Sofoware\Stu_S
-oft\Keil\pack\ArteryTek\AT32F435_437_DFP\2.1.3\Device\Include --predefine="__UV
-ISION_VERSION SETA 538" --predefine="_RTE_ SETA 1" --predefine="AT32F435RGT7 SE
-TA 1" --predefine="_RTE_ SETA 1" --list=.\listings\startup_at32f435_437.lst ..\
-libraries\cmsis\cm4\device_support\startup\mdk\startup_at32f435_437.s
+5_437.o -ID:\A_Sofoware\Stu_Soft\Keil\pack\ArteryTek\AT32F435_437_DFP\2.1.3\Dev
+ice\Include --predefine="__UVISION_VERSION SETA 538" --predefine="AT32F435RGT7 
+SETA 1" --list=.\listings\startup_at32f435_437.lst ..\libraries\cmsis\cm4\devic
+e_support\startup\mdk\startup_at32f435_437.s
 
 
 
@@ -2385,4 +2381,4 @@ rtup_at32f435_437.s
       None
 Comment: __use_two_region_memory unused
 3 symbols
-463 symbols in table
+462 symbols in table

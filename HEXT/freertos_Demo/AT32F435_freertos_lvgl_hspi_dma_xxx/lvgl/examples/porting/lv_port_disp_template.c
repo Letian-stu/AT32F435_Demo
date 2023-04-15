@@ -13,23 +13,23 @@ static lv_color_t buf_2_2[MY_DISP_HOR_RES * ONE_FLUSH_SIZES];
 
 static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p)
 {
-	u32 size = (area->x2 - area->x1+1)*(area->y2 - area->y1+1) ;
+	u32 size = (area->x2 - area->x1+1)*(area->y2 - area->y1+1);
 
 	LCD_DC_Set();
 	LCD_Address_Set(area->x1,area->y1,area->x2,area->y2);  //ÉèÖÃÏÔÊ¾·¶Î§
 
 	spi_frame_bit_num_set(SPI1, SPI_FRAME_16BIT);
-	gpio_bits_reset(GPIOA, GPIO_PINS_4); //CS=0	
+	LCD_CS_Clr(); //CS=0	
 	
-	DMA1_CHANNEL1->ctrl    &= ~(uint16_t)1;
+	dma_channel_enable(DMA1_CHANNEL1, FALSE);
 	DMA1_CHANNEL1->maddr  = (uint32_t)color_p;
 	DMA1_CHANNEL1->dtcnt = size;
-	DMA1_CHANNEL1->ctrl    |= (uint16_t)1;  
+	dma_channel_enable(DMA1_CHANNEL1, TRUE);
 	
 	while(!dma_flag_get(DMA1_FDT1_FLAG));
 	while(spi_i2s_flag_get(SPI1, SPI_I2S_BF_FLAG) == SET); 
 	
-	gpio_bits_set(GPIOA, GPIO_PINS_4); //CS=1
+	LCD_CS_Set(); //CS=1
 	
 	lv_disp_flush_ready(disp_drv);
 }
