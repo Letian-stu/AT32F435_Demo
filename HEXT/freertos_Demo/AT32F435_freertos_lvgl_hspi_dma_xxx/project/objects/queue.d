@@ -1,0 +1,15 @@
+.\objects\queue.o: D:/A_Sofoware/Stu_Soft/Keil/pack/ARM/CMSIS-FreeRTOS/10.4.3/Source/queue.c
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdlib.h
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\string.h
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\FreeRTOS.h
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stddef.h
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\ARM\ARM_COM5\Bin\..\include\stdint.h
+.\objects\queue.o: ..\user\inc\FreeRTOSConfig.h
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\projdefs.h
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\portable.h
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\deprecated_definitions.h
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\portable\RVDS\ARM_CM4F\portmacro.h
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\mpu_wrappers.h
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\task.h
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\list.h
+.\objects\queue.o: D:\A_Sofoware\Stu_Soft\Keil\pack\ARM\CMSIS-FreeRTOS\10.4.3\Source\include\queue.h
