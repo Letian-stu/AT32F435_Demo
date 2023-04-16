@@ -14,22 +14,36 @@ extern "C" {
 
 #include "ui_events.h"
 extern lv_obj_t *ui_Screen1;
-extern lv_obj_t *ui_Panel1;
+extern lv_obj_t *ui_Panel2;
+void ui_event_ImgButton1( lv_event_t * e);
 extern lv_obj_t *ui_ImgButton1;
+void ui_event_ImgButton2( lv_event_t * e);
 extern lv_obj_t *ui_ImgButton2;
+void ui_event_ImgButton3( lv_event_t * e);
 extern lv_obj_t *ui_ImgButton3;
-extern lv_obj_t *ui_ImgButton4;
-extern lv_obj_t *ui_ImgButton5;
+extern lv_obj_t *ui_Screen2;
+extern lv_obj_t *ui_Calendar1;
+void ui_event_ImgButton6( lv_event_t * e);
 extern lv_obj_t *ui_ImgButton6;
+extern lv_obj_t *ui_Screen3;
+extern lv_obj_t *ui_Chart2;
+void ui_event_ImgButton5( lv_event_t * e);
+extern lv_obj_t *ui_ImgButton5;
+extern lv_obj_t *ui_Screen4;
+extern lv_obj_t *ui_Label2;
+extern lv_obj_t *ui_Checkbox1;
+extern lv_obj_t *ui_Roller1;
+extern lv_obj_t *ui_Switch1;
+extern lv_obj_t *ui_Spinner1;
+void ui_event_ImgButton4( lv_event_t * e);
+extern lv_obj_t *ui_ImgButton4;
 extern lv_obj_t *ui____initial_actions0;
 
 
-LV_IMG_DECLARE( ui_img_camera_png);   // assets\camera.png
+LV_IMG_DECLARE( ui_img_takepic_png);   // assets\takepic.png
 LV_IMG_DECLARE( ui_img_image_png);   // assets\image.png
 LV_IMG_DECLARE( ui_img_weather_png);   // assets\weather.png
-LV_IMG_DECLARE( ui_img_sd_png);   // assets\sd.png
-LV_IMG_DECLARE( ui_img_set_png);   // assets\set.png
-LV_IMG_DECLARE( ui_img_key_png);   // assets\key.png
+LV_IMG_DECLARE( ui_img_back_png);   // assets\back.png
 
 
 

@@ -188,3 +188,5 @@
 .\objects\main.o: ..\user\inc\lv_tick_custom.h
 .\objects\main.o: ..\user\inc\bsp_spi_lcd.h
 .\objects\main.o: ..\lvgl\examples\porting\lv_port_disp_template.h
+.\objects\main.o: ..\lv_ui\inc\ui.h
+.\objects\main.o: ..\lv_ui\inc\ui_events.h

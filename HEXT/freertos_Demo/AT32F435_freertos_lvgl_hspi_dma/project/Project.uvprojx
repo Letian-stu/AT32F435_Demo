@@ -1411,56 +1411,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>lv_demos</GroupName>
-          <Files>
-            <File>
-              <FileName>lv_demo_benchmark.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl\demos\benchmark\lv_demo_benchmark.c</FilePath>
-            </File>
-            <File>
-              <FileName>img_benchmark_cogwheel_alpha16.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl\demos\benchmark\assets\img_benchmark_cogwheel_alpha16.c</FilePath>
-            </File>
-            <File>
-              <FileName>img_benchmark_cogwheel_argb.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl\demos\benchmark\assets\img_benchmark_cogwheel_argb.c</FilePath>
-            </File>
-            <File>
-              <FileName>img_benchmark_cogwheel_chroma_keyed.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl\demos\benchmark\assets\img_benchmark_cogwheel_chroma_keyed.c</FilePath>
-            </File>
-            <File>
-              <FileName>img_benchmark_cogwheel_indexed16.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl\demos\benchmark\assets\img_benchmark_cogwheel_indexed16.c</FilePath>
-            </File>
-            <File>
-              <FileName>img_benchmark_cogwheel_rgb.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl\demos\benchmark\assets\img_benchmark_cogwheel_rgb.c</FilePath>
-            </File>
-            <File>
-              <FileName>img_benchmark_cogwheel_rgb565a8.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl\demos\benchmark\assets\img_benchmark_cogwheel_rgb565a8.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_bechmark_montserrat_16_compr_az.c.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl\demos\benchmark\assets\lv_font_bechmark_montserrat_16_compr_az.c.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_bechmark_montserrat_28_compr_az.c.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl\demos\benchmark\assets\lv_font_bechmark_montserrat_28_compr_az.c.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>lv_ui</GroupName>
           <Files>
             <File>
@@ -1479,9 +1429,9 @@
           <GroupName>lv_img</GroupName>
           <Files>
             <File>
-              <FileName>ui_img_camera_png.c</FileName>
+              <FileName>ui_img_back_png.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lv_ui\img\ui_img_camera_png.c</FilePath>
+              <FilePath>..\lv_ui\img\ui_img_back_png.c</FilePath>
             </File>
             <File>
               <FileName>ui_img_image_png.c</FileName>
@@ -1489,19 +1439,9 @@
               <FilePath>..\lv_ui\img\ui_img_image_png.c</FilePath>
             </File>
             <File>
-              <FileName>ui_img_key_png.c</FileName>
+              <FileName>ui_img_takepic_png.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lv_ui\img\ui_img_key_png.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_img_sd_png.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lv_ui\img\ui_img_sd_png.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_img_set_png.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lv_ui\img\ui_img_set_png.c</FilePath>
+              <FilePath>..\lv_ui\img\ui_img_takepic_png.c</FilePath>
             </File>
             <File>
               <FileName>ui_img_weather_png.c</FileName>
